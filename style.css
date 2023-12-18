@@ -42,6 +42,7 @@ p{
 }
 
 .form{
+    display: flex;
     background-color: #5B6C79;
     width: 700px;
     margin-left: 30%;
@@ -49,6 +50,40 @@ p{
     margin-top: 1%;
     border-width: 10px;
     border-style: groove;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+    padding-bottom: 2%;
+
+}
+
+.input-section{
+    margin: 1%;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 20%;
+    padding-right: 18%;
+}
+
+.xp{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.reg{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+.regp{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 0;
+    padding-bottom: 0;
 
 }
   
