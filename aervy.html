@@ -8,23 +8,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aervy's AR Coding Club page</title>
 </head>
-<style>
-    .m-a {
-        margin: auto;
-    }
-</style>
-<body class="bg-gray-300 text-black w-full h-full">
+<script>
+    import './public/image/logo-bold.svg';
+</script>
+<body class="text-black w-full h-screen">
     <!-- Nav Bar / Header -->
-    <div class="flex flex-col mt-6">
-        <div class="ml-20">
-            <a href="./index.html" class="text-blue-500 font-bold text-3xl">AR Coding Club</a>
+    <nav class="flex py-2 bg-black flex-wrap items-center justify-between mx-auto p-4 px-20">
+        <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-revers text-blue-500 font-bold text-3xl"><img src="./public/image/logo-bold.svg" alt="AR Coding Club logo"></a>
+
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li>
+                    <a href="./resources" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Resources</a>
+                </li>
+                <li>
+                    <a href="./calendar" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Calendar</a>
+                </li>
+                <li>
+                    <a href="./join" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Join Us</a>
+                </li>
+            </ul>
         </div>
-    </div>
+    </nav>
     <!-- Main Content -->
-    <!-- Why the fuck doesn't this work? -->
-    <div class="mx-auto mt-20">
-        <div class="m-auto w-fit">
-            <p>E</p>
+    <!-- First bit of content (what you see on page load) is grid, so we can split it and make good use of all that glorious space desktop has -->
+    <div class="m-auto mt-40 w-fit grid grid-cols-2 grid-rows-1 gap-x-52">
+        <div class="w-fit text-lg">
+            <h1 class="font-bold text-4xl text-header-text max-w-prose">Anoka-Ramsey Coding Club</h1>
+            <p class="max-w-prose text-xl">The official club to help students become better programmers, network, and providing resources to students at Anoka-Ramsey Community College.</p>
+            <p class="font-bold text-lg">Campus Independent</p>
+        </div>
+        <div class="w-fit text-lg flex flex-col space-y-8">
+            <!-- Here we'll do the cards in the design that are off to the right -->
+            <div class="bg-bg-tertiary rounded-xl p-4 text-header-text-secondary align-middle">
+                <h2 class="font-bold m-auto w-fit font-xl">Resources</h2>
+                <p class="text-text-secondary mt-4 m-auto w-fit max-w-md text-center">We provide resources to aid you with your journey along the computer science pathway, such as information on how to get free courses and services.</p>
+            </div>
+            <div class="bg-bg-tertiary rounded-xl p-4 text-header-text-secondary align-middle">
+                <h2 class="font-bold m-auto w-fit font-xl">Networking</h2>
+                <p class="text-text-secondary mt-4 m-auto w-fit max-w-md text-center">In order to help you succeed in the land of computer science, ARCC provides an excellent opportunity to network with others on the CS path</p>
+            </div>
+            <div class="bg-bg-tertiary rounded-xl p-4 text-header-text-secondary align-middle">
+                <h2 class="font-bold m-auto w-fit font-xl">Skills</h2>
+                <p class="text-text-secondary mt-2 m-auto w-fit max-w-md text-center">Not only do we provide resources to sharpen your skills in CS, we (and our members) are resources to hone your skills like specific languages, backend development, and frontend development.</p>
+            </div>
         </div>
     </div>
 </body>
