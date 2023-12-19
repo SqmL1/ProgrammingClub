@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SqmL1/ProgrammingClub/issues"
   },
-  "homepage": "https://github.com/SqmL1/ProgrammingClub#readme"
+  "homepage": "https://github.com/SqmL1/ProgrammingClub#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.7"
+  }
 }
