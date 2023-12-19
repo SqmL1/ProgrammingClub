@@ -8,12 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aervy's AR Coding Club page</title>
 </head>
-<script>
-    import './public/image/logo-bold.svg';
-</script>
 <body class="text-black w-full h-screen">
     <!-- Nav Bar / Header -->
-    <nav class="flex py-2 bg-black flex-wrap items-center justify-between mx-auto px-20">
+    <nav class="flex py-2 bg-gray-700 dark:bg-black flex-wrap items-center justify-between mx-auto px-20">
         <!-- Logo as link-->
         <a href="./index.html" class="flex items-center rtl:space-x-revers text-blue-500"><img src="./public/image/logo-bold.svg" alt="AR Coding Club logo"></a>
 
@@ -26,7 +23,7 @@
         </button>
         <!-- Links & stuff -->
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-black md:dark:bg-black dark:border-black">
                 <li>
                     <a href="./resources" class="text-lg block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-link dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Resources</a>
                 </li>
@@ -41,21 +38,21 @@
     </nav>
     <!-- Main Content -->
     <!-- First bit of content (what you see on page load) is grid, so we can split it and make good use of all that glorious space desktop has -->
-    <div class="m-auto mt-40 w-fit grid grid-cols-2 grid-rows-1 gap-x-52">
+    <div class="flex flex-col m-auto 2xl:mx-auto mt-20 2xl:mt-40 w-fit md:grid md:grid-cols-2 grid-flow-col-dense md:gap-x-12 xl:gap-x-24 2xl:gap-x-52">
         <div class="w-fit text-lg">
-            <h1 class="font-bold text-4xl text-header-text max-w-prose">Anoka-Ramsey Coding Club (ARCC)</h1>
-            <p class="max-w-prose text-xl mt-6">The official club to help students become better programmers, network, and providing resources to students at <a href="https://www.anokaramsey.edu" class="text-link underline-offset-1 underline">Anoka-Ramsey Community College.</a></p>
-            <p class="font-bold text-lg mt-2">Campus Independent</p>
+            <h1 class="max-w-md font-bold text-4xl text-header-text 2xl:w-prose w-fit">Anoka-Ramsey Coding Club (ARCC)</h1>
+            <p class="max-w-md break-words lg:max-w-lg xl:max-w-xl 2xl:max-w-prose text-lg 2xl:text-xl mt-6 w-fit">The official club to help students become better programmers, network, and providing resources to students at <a href="https://www.anokaramsey.edu" class="text-link underline-offset-1 underline">Anoka-Ramsey Community College.</a></p>
+            <p class="font-bold text-md lg:text-lg mt-2 w-fit">Campus Independent</p>
         </div>
         <div class="w-fit text-lg flex flex-col space-y-8">
             <!-- Here we'll do the cards in the design that are off to the right -->
             <div class="bg-bg-tertiary rounded-xl p-4 text-header-text-secondary align-middle">
                 <h2 class="font-bold m-auto w-fit font-xl">Resources</h2>
-                <p class="text-text-secondary mt-4 m-auto w-fit max-w-md text-center">We provide resources to aid you with your journey along the computer science pathway, such as information on how to get free courses and services.</p>
+                <p class="text-text-secondary mt-2 m-auto w-fit max-w-md text-center">We provide resources to aid you with your journey along the computer science pathway, such as information on how to get free courses and services.</p>
             </div>
             <div class="bg-bg-tertiary rounded-xl p-4 text-header-text-secondary align-middle">
                 <h2 class="font-bold m-auto w-fit font-xl">Networking</h2>
-                <p class="text-text-secondary mt-4 m-auto w-fit max-w-md text-center">In order to help you succeed in the land of computer science, ARCC provides an excellent opportunity to network with others on the CS path</p>
+                <p class="text-text-secondary mt-2 m-auto w-fit max-w-md text-center">In order to help you succeed in the land of computer science, ARCC provides an excellent opportunity to network with others on the CS path</p>
             </div>
             <div class="bg-bg-tertiary rounded-xl p-4 text-header-text-secondary align-middle">
                 <h2 class="font-bold m-auto w-fit font-xl">Skills</h2>
