@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/output.css">
+    <link rel="script" href="./public/script.js">
+    <title>Document</title>
+</head>
+<body>
+    <!---NavBar-->
+    <nav class="flex py-2 bg-gray-700 dark:bg-black flex-wrap items-center justify-between mx-auto px-20">
+
+        <a href="./index.html" class="flex items-center rtl:space-x-revers text-blue-500"><img src="./public/image/logo-bold.svg" alt="AR Coding Club logo"></a>
+
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <!--TITLE-->
+        <div class="hover:text-blue-500 flex items-center font-semibold mx-4" href="#">
+            Calendar & events
+            <span class="hidden absolute top-0 w-full h-full opacity-0 -z-10 hover:block hover:opacity-100 transition-opacity duration-150 ease-in-out"></span>
+        </div>
+          
+        <a class="hover:text-blue-500 flex items-center font-semibold mx-4" href="#">
+            <div class=".text-white popup hidden top-0 right-0 mt-2 py-1 px-2 rounded bg-white dark:bg-white text-white">
+              View the latest events and schedule!
+            </div>
+          </a>
+
+        <!-- Links & stuff -->
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <div>
+    
+            </div>
+                
+            </ul>
+        </div>
+    </nav>
+    
+</body>
+</html>
