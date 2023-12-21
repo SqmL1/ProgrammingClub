@@ -32,12 +32,12 @@ useHead({
       <p class="font-bold text-lg lg:text-lg mt-2 w-fit">Campus Independent.</p>
       <!--Join Now button-->
       <a href="/join">
-      <div class="p-1.5 bg-gradient-to-tl to-blue-400 from-yellow-300 w-fit rounded-2xl mt-4">
-        <button class="bg-white text-black text-2xl position left-6 right-6 w-fit max-w-fit p-3 rounded-xl font-bold "> Join Now!</button>
+      <div class="p-1.5 bg-gradient-to-tl to-blue-400 from-yellow-300 w-fit rounded-full mt-4">
+        <button class="bg-white text-black text-2xl position left-6 right-6 w-fit max-w-fit p-3 rounded-full font-bold font-mono"> Join Now!</button>
       </div>
      </a>
       <!--Learn more Section-->
-      <p class="font-bold font-mono mt-44">Learm more</p>
+      <p class="font-bold font-mono mt-44 ">Learm more</p>
       <a href="/about">
       <div class="bg-gradient-to-tl to-blue-400 from-yellow-300 w-fit rounded-full p-1 ">
         <button class="text-3xl font-bold bg-white p-3 px-4 py-2 rounded-full"> > </button>
