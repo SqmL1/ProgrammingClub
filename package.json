@@ -1,24 +1,23 @@
 {
   "name": "programmingclub",
   "version": "0.0.1",
-  "description": "Anoka Ramsey Coding Club Website",
-  "main": "index.js",
+  "description": "Anoka-Ramsey Coding Club Website",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind": "npx tailwindcss -i ./input.css -o ./public/output.css",
-    "tailwind:watch": "npx tailwindcss -i ./input.css -o ./public/output.css --watch"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SqmL1/ProgrammingClub.git"
-  },
-  "author": "Anoka Ramsey Coding Club",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SqmL1/ProgrammingClub/issues"
-  },
-  "homepage": "https://github.com/SqmL1/ProgrammingClub#readme",
   "devDependencies": {
-    "tailwindcss": "^3.3.7"
+    "@nuxt/devtools": "latest",
+    "autoprefixer": "^10.4.16",
+    "nuxt": "^3.8.2",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0",
+    "vue": "^3.3.12",
+    "vue-router": "^4.2.5"
   }
 }

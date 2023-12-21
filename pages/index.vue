@@ -1,0 +1,27 @@
+<script setup lang="ts">
+</script>
+
+<template>
+  <div class="flex flex-col m-auto 2xl:mx-auto mt-20 2xl:mt-40 w-fit md:grid md:grid-cols-2 grid-flow-col-dense md:gap-x-12 xl:gap-x-24 2xl:gap-x-52">
+    <div class="w-fit text-lg">
+      <h1 class="max-w-md font-bold text-4xl text-header-text 2xl:w-prose w-fit">Anoka-Ramsey Coding Club (ARCC)</h1>
+      <p class="max-w-md break-words lg:max-w-lg xl:max-w-xl 2xl:max-w-prose text-lg 2xl:text-xl mt-6 w-fit">The official club to help students become better programmers, network, and providing resources to students at <a href="https://www.anokaramsey.edu" class="text-link underline-offset-1 underline">Anoka-Ramsey Community College.</a></p>
+      <p class="font-bold text-md lg:text-lg mt-2 w-fit">Campus Independent</p>
+    </div>
+    <div class="w-fit text-lg flex flex-col space-y-8">
+      <!-- Here we'll do the cards in the design that are off to the right -->
+      <div class="bg-bg-tertiary rounded-xl p-4 text-header-text-secondary align-middle">
+        <h2 class="font-bold m-auto w-fit font-xl">Resources</h2>
+        <p class="text-text-secondary mt-2 m-auto w-fit max-w-md text-center">We provide resources to aid you with your journey along the computer science pathway, such as information on how to get free courses and services.</p>
+      </div>
+      <div class="bg-bg-tertiary rounded-xl p-4 text-header-text-secondary align-middle">
+        <h2 class="font-bold m-auto w-fit font-xl">Networking</h2>
+        <p class="text-text-secondary mt-2 m-auto w-fit max-w-md text-center">In order to help you succeed in the land of computer science, ARCC provides an excellent opportunity to network with others on the CS path.</p>
+      </div>
+      <div class="bg-bg-tertiary rounded-xl p-4 text-header-text-secondary align-middle">
+        <h2 class="font-bold m-auto w-fit font-xl">Skills</h2>
+        <p class="text-text-secondary mt-2 m-auto w-fit max-w-md text-center">Not only do we provide resources to sharpen your skills in CS, we (and our members) are resources to hone your skills like specific languages, backend development, and frontend development.</p>
+      </div>
+    </div>
+  </div>
+</template>
