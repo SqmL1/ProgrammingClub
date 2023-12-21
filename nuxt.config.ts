@@ -16,6 +16,9 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'en'
+      },
       title: 'Anoka-Ramsey Coding Club',
       meta: [
         {
@@ -24,7 +27,7 @@ export default defineNuxtConfig({
         },
         {
           property: 'og:icon',
-          content: '/image/Icon Transparent.png'
+          content: '/logo-bold.svg'
         },
         {
           property: 'description',
@@ -32,13 +35,18 @@ export default defineNuxtConfig({
         },
         {
           property: 'icon',
-          content: '/image/Icon Transparent.png'
+          content: '/logo-bold.svg'
         },
         {
           property: 'og:image',
-          content: './image/Icon Transparent.png'
+          content: './logo-bold.svg'
         }
       ],
+      link: [
+        {
+          rel: 'icon', type: 'image/png', href: '/favicon.ico'
+        }
+      ]
     }
   }
 })

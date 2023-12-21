@@ -1,4 +1,27 @@
 <script setup lang="ts">
+useSeoMeta({
+   description: 'The coding club for programmers of all levels at Anoka-Ramsey Community College',
+   ogTitle: 'Anoka-Ramsey Coding Club',
+   ogDescription: 'The coding club for programmers of all levels at Anoka-Ramsey Community College',
+   ogImage: '/logo-bold.svg',
+   twitterTitle: 'Anoka-Ramsey Coding Club',
+   twitterDescription: 'The coding club for programmers of all levels at Anoka-Ramsey Community College',
+   twitterImage: '/logo-bold.svg',
+   ogLocale: 'en-US'
+})
+
+useHead({
+   htmlAttrs: {
+      lang: 'en'
+   },
+   link: [
+      {
+         rel: 'icon',
+         type: 'image/png',
+         href: '/favicon.png'
+      }
+   ]
+})
 </script>
 
 <template>
