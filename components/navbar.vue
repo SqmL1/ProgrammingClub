@@ -19,19 +19,19 @@
       </button>
       <!-- Links & stuff -->
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-black">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:flex-row md:space-x-16 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-black">
           <li>
-            <a href="/resources" class="text-lg block py-2 px-3 text-text-secondary rounded md:hover:bg-transparent md:border-0 md:hover:text-link md:p-0 md:dark:hover:text-link">Resources</a>
+            <a href="/resources" class="text-lg block py-2 px-3 text-text-secondary rounded md:hover:bg-transparent md:border-0 md:hover:text-link md:p-0 md:dark:hover:text-link font-mono">Resources</a>
           </li>
           <li>
-            <a href="/calendar" class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0">Calendar</a>
+            <a href="/calendar" class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 font-mono">Calendar</a>
           </li>
           <li>
-            <a href="/About" class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0">About Us</a>
+            <a href="/About" class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 font-mono">About Us</a>
           </li>
           <li>
             <!-- Need to do this later -->
-            <a href="/join" class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 md:dark:hover:text-link">Join</a>
+            <a href="/join" class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 md:dark:hover:text-link font-mono">Join</a>
           </li>
 
         </ul>
