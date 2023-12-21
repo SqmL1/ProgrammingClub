@@ -27,9 +27,13 @@
             <a href="/calendar" class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0">Calendar</a>
           </li>
           <li>
-            <!-- Need to do this later -->
-            <a href="/join" class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 md:dark:hover:text-link">Join Us</a>
+            <a href="/About" class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0">About Us</a>
           </li>
+          <li>
+            <!-- Need to do this later -->
+            <a href="/join" class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 md:dark:hover:text-link">Join</a>
+          </li>
+
         </ul>
       </div>
     </nav>

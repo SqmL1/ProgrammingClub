@@ -31,14 +31,18 @@ useHead({
       <p class="max-w-md break-words lg:max-w-lg xl:max-w-xl 2xl:max-w-prose text-lg 2xl:text-xl mt-6 w-fit ml-16 text-left ">The official place to assist students in pursuing their tech careers through real programming skills, networking opportunities, and peer-to-peer collaboration at <a href="https://www.anokaramsey.edu" class="text-link underline-offset-1 underline">Anoka-Ramsey Community College.</a></p>
       <p class="font-bold text-lg lg:text-lg mt-2 w-fit ml-16">Campus Independent.</p>
       <!--Join Now button-->
+      <a href="/join">
       <div class="p-1.5 bg-gradient-to-tl to-blue-400 from-yellow-300 w-fit rounded-2xl ml-16 mt-4">
         <button class="bg-white text-black text-2xl position left-6 right-6 w-fit max-w-fit p-3 rounded-xl font-bold "> Join Now!</button>
       </div>
+     </a>
       <!--Learn more Section-->
       <p class="font-bold font-mono ml-16 mt-32">Learm more</p>
+      <a href="/about">
       <div class="bg-gradient-to-tl to-blue-400 from-yellow-300 w-fit rounded-full p-1 ml-16">
         <button class="text-3xl font-bold bg-white p-3 px-4 py-2 rounded-full"> > </button>
       </div>
+      </a>
       
     </div>
     <div class="w-fit text-lg flex flex-col space-y-8">
