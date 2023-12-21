@@ -1,5 +1,28 @@
 <script setup lang="ts">
+useSeoMeta({
+   title: 'Join the AR Coding Club',
+   description: 'Join the coding club for programmers of all levels at Anoka-Ramsey Community College',
+   ogTitle: 'Join the AR Coding Club',
+   ogDescription: 'Join the coding club for programmers of all levels at Anoka-Ramsey Community College',
+   ogImage: '/logo-bold.svg',
+   twitterTitle: 'Join the AR Coding Club',
+   twitterDescription: 'Join the coding club for programmers of all levels at Anoka-Ramsey Community College',
+   twitterImage: '/logo-bold.svg',
+   ogLocale: 'en-US'
+})
 
+useHead({
+   htmlAttrs: {
+      lang: 'en'
+   },
+   link: [
+      {
+         rel: 'icon',
+         type: 'image/png',
+         href: '/favicon.png'
+      }
+   ]
+})
 </script>
 
 <template>
