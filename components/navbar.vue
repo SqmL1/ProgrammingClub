@@ -43,7 +43,7 @@
         <NuxtLink to="/join">
           <li>
             <!-- Need to do this later -->
-            <a href="/join" class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 md:dark:hover:text-link font-mono">Join</a>
+            <span href="/join" class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 md:dark:hover:text-link font-mono">Join</span>
           </li>
         </NuxtLink>
 
