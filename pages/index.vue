@@ -37,7 +37,8 @@ useHead({
       </div>
      </a>
       <!--Learn more Section-->
-      <p class="font-bold font-mono mt-44 ">Learm more</p>
+       <!-- Should we put all this on the same page? -->
+      <p class="font-bold font-mono mt-44 ">Learn more</p>
       <a href="/about">
       <div class="bg-gradient-to-tl to-blue-400 from-yellow-300 w-fit rounded-full p-1 ">
         <button class="text-3xl font-bold bg-white p-3 px-4 py-2 rounded-full"> > </button>
