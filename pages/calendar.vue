@@ -1,12 +1,12 @@
 <script setup lang="ts">
 
 useSeoMeta({
-   description: 'A calendar of events for the Anoka-Ramsey Coding Club',
-   ogTitle: 'Coding Club Calendar | Anoka Ramsey Coding Club',
-   ogDescription: 'A calendar of events for the Anoka-Ramsey Coding Club',
+   description: 'A calendar of events for the Anoka-Ramsey Programming Club',
+   ogTitle: 'Programming Club Calendar | Anoka Ramsey Programming Club',
+   ogDescription: 'A calendar of events for the Anoka-Ramsey Programming Club',
    ogImage: '/logo-bold.svg',
-   twitterTitle: 'Coding Club Calendar | Anoka Ramsey Coding Club',
-   twitterDescription: 'A calendar of events for the Anoka-Ramsey Coding Club',
+   twitterTitle: 'Programming Club Calendar | Anoka Ramsey Programming Club',
+   twitterDescription: 'A calendar of events for the Anoka-Ramsey Programming Club',
    twitterImage: '/logo-bold.svg',
    ogLocale: 'en-US'
 })

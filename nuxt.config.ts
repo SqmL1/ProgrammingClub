@@ -19,11 +19,11 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
-      title: 'Anoka-Ramsey Coding Club',
+      title: 'Anoka-Ramsey Programming Club',
       meta: [
         {
           property: 'og:title',
-          content: 'Anoka-Ramsey Coding Club'
+          content: 'Anoka-Ramsey Programming Club'
         },
         {
           property: 'og:icon',
@@ -31,7 +31,7 @@ export default defineNuxtConfig({
         },
         {
           property: 'description',
-          content: 'The Anoka-Ramsey Community College Coding Club'
+          content: 'The Anoka-Ramsey Community College Programming Club'
         },
         {
           property: 'icon',

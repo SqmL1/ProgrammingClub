@@ -1,11 +1,11 @@
 <script setup lang="ts">
 useSeoMeta({
-   title: 'Coding resources for college students | Anoka-Ramsey Coding Club',
+   title: 'Coding resources for college students | Anoka-Ramsey Programming Club',
    description: 'We have listed coding resources that are available for college students, resources like tutorials, documentation, coding camps, and free or discounted services and products!',
-   ogTitle: 'Coding resources for college students | Anoka-Ramsey Coding Club',
+   ogTitle: 'Coding resources for college students | Anoka-Ramsey Programming Club',
    ogDescription: 'We have listed coding resources that are available for college students, resources like tutorials, documentation, coding camps, and free or discounted services and products!',
    ogImage: '/logo-bold.svg',
-   twitterTitle: 'Coding resources for college students | Anoka-Ramsey Coding Club',
+   twitterTitle: 'Coding resources for college students | Anoka-Ramsey Programming Club',
    twitterDescription: 'We have listed coding resources that are available for college students, resources like tutorials, documentation, coding camps, and free or discounted services and products!',
    twitterImage: '/logo-bold.svg',
    ogLocale: 'en-US'
