@@ -26,9 +26,10 @@ useHead({
 </script>
 
 <template>
-   <div class=" w-fit text-lg">
-      <h1 class="max-w-md font-bold text-4xl text-header-text 2xl:w-prose w-fit">Resources</h1>
-   </div>
+   
+<h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Collaborate!</span> We Provide Resources.</h1>
+<p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400 text-center">We believe that our club will provide resources and opputunities to help eachother grow!</p>
+
 </template>
 
 <style scoped>
