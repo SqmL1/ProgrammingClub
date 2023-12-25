@@ -38,10 +38,11 @@ useHead({
        </div>
 
          <!--Learn more button-->
-         <a href="/about">
+      <NuxtLink to="/about">
          <div class="p-1.5 bg-gradient-to-tl to-blue-400 from-yellow-300 w-fit rounded-full ml-16 mt-4 font-">
          <button class="bg-white text-black text-2xl position left-6 right-6 w-fit max-w-fit p-3 rounded-full font-bold font-mono "> Learn More</button>
-         </div></a>
+         </div>
+      </NuxtLink>
       </div>
 
         <h1></h1>
