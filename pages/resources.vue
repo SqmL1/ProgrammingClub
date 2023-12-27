@@ -50,29 +50,29 @@ useHead({
                   <a href="https://neetcode.io/" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
 
                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">NeetCode</h5>
-                     <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                     <p class="font-normal text-gray-700 dark:text-gray-400">NeetCode is a structured way to learn algorithms and data structures if you dont know where to start.</p>
                   </a>
                </div>
                <div>
                   <a href="https://leetcode.com/" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
 
                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">LeetCode</h5>
-                     <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                     <p class="font-normal text-gray-700 dark:text-gray-400">LeetCode helps prepare you for technical interviews. One Leetcode problem a day keeps unemplyment away!</p>
                   </a>
                </div>
 
                <div> 
                   <a href="https://www.codecademy.com/?utm_id=t_kwd-78958985904710:loc-4104:ag_1263339270701571:cp_370028884:n_o:d_c&msclkid=184fbb407e10102397b8decbd8864c12&utm_source=bing&utm_medium=cpc&utm_campaign=US_Brand_Exact&utm_term=codecademy&utm_content=Codecademy" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
 
-                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">CodeAcademy</h5>
-                     <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Codecademy</h5>
+                     <p class="font-normal text-gray-700 dark:text-gray-400">Codecademy is a course that teaches specific languages rather than the fundamentals.</p>
                   </a>
                </div>
                <div>
                   <a href="https://www.edx.org/" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
 
                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">edX</h5>
-                     <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                     <p class="font-normal text-gray-700 dark:text-gray-400">EdX is a website that contains a multitude of courses to learn programming from.</p>
                   </a>
                </div>
 
@@ -80,7 +80,7 @@ useHead({
                   <a href="https://github.com/" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
 
                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">GitHub</h5>
-                     <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                     <p class="font-normal text-gray-700 dark:text-gray-400">Github is a great place to start your programming career!</p>
                   </a>
                </div>
          </div>
