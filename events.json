@@ -1,0 +1,21 @@
+{
+  "2024": {
+    "january": {
+      "events": [
+        {
+          "name": "Speaker",
+          "description": "We have a security expert coming into tell us about the importance of security and give resources to research it more",
+          "timeStart": "16:00",
+          "timeEnd": "19:00",
+          "location": "Room BN207",
+          "locationExtended": "Coon Rapids Campus",
+          "date": "8"
+        },
+        {
+          "name": "hi!",
+          "description": "im an example!"
+        }
+      ]
+    }
+  }
+}
