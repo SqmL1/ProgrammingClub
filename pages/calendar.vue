@@ -23,9 +23,20 @@ useHead({
       }
    ]
 })
+import { onMounted } from 'vue'
+import { initFlowbite } from 'flowbite'
+
+// initialize components based on data attribute selectors
+    onMounted(() => {
+    initFlowbite();
+})
 </script>
 
 <template>
+   
+   <div>
+      <div inline-datepicker data-date="02/25/2022"></div>
+   </div>
 
 </template>
 
