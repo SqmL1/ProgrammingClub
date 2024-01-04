@@ -2,16 +2,13 @@
     <div class="flex justify-center">
         <div class="bg-zinc-800 h-screen w-5/6">
             <div>
-                <h1></h1>
+                <div class="bg-white w-2/5 h-fit rounded-full border-solid bg-gradient-to-tl to-blue-400 from-yellow-300 border-0 mx-auto mt-4 p-2"> <h1 class="text-center text-6xl text-gray-900 bg-white rounded-full"> About Us</h1></div>
+                
 
-                <NuxtLink to="/about">
-                    <div class="p-1.5 bg-gradient-to-tl to-blue-400 from-yellow-300 w-fit rounded-2xl ml-16 mt-4">
-                    <button class="bg-white text-black text-2xl position left-6 right-6 w-fit max-w-fit p-3 rounded-xl font-bold ">Join Now!</button>
-                    </div>
-                </NuxtLink>
                 
                 
-                <div class="grid-rows-1"> <!--Need to get the content in a row on the bottom-->
+                
+                <div class="flex flex-row-2 justify-center gap-4 mt-10"> <!--Need to get the content in a row on the bottom-->
                     
 
                     <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -39,7 +36,7 @@
                         </div>
                         <div class="flex flex-col items-center pb-10">
                             <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="" alt=""/>
-                            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
+                            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Daren</h5>
                             <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
                             <div class="flex mt-4 md:mt-6">
                                 <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add friend</a>
@@ -72,9 +69,10 @@
                             </div>
                         </div>
                         <div class="flex flex-col items-center pb-10">
-                            <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="" alt=""/>
-                            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
-                            <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
+                            <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="../samPFP.jpg" alt=""/>
+                            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Samuil Iordachi</h5>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Student/SWE</span>
+                            <span class="text-center mt-2">Hello, my name is Sam and I am student at Anoka Ramsey and an aspiring software engineer.</span>
                             <div class="flex mt-4 md:mt-6">
                                 <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add friend</a>
                                 <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700 ms-3">Message</a>
@@ -109,7 +107,7 @@
                         </div>
                         <div class="flex flex-col items-center pb-10">
                             <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="" alt=""/>
-                            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
+                            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Rob</h5>
                             <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
                             <div class="flex mt-4 md:mt-6">
                                 <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add friend</a>
@@ -120,6 +118,12 @@
 
                 </div>
             </div>
+
+            <NuxtLink to="/about">
+                    <div class="p-1.5 bg-gradient-to-tl to-blue-400 from-yellow-300 w-fit rounded-2xl mx-auto mt-10">
+                    <button class="bg-white text-black text-2xl position left-6 right-6 w-fit max-w-fit p-3 rounded-xl font-bold ">Join Now!</button>
+                    </div>
+                </NuxtLink>
         </div>
     </div>
 

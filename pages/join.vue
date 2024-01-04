@@ -37,6 +37,8 @@ useHead({
          <p class="font-bold text-lg lg:text-lg mt-2 w-fit">Campus Independent.</p>
        </div>
 
+       
+
          <!--Learn more button-->
       <NuxtLink to="/about">
          <div class="p-1.5 bg-gradient-to-tl to-blue-400 from-yellow-300 w-fit rounded-full ml-16 mt-4 font-">
