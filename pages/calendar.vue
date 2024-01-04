@@ -63,15 +63,17 @@ useHead({
     }
   ]
 })
+import { onMounted } from 'vue'
+import { initFlowbite } from 'flowbite'
+
+// initialize components based on data attribute selectors
+    onMounted(() => {
+    initFlowbite();
+})
 </script>
 
 <template>
-  <ul>
-    <li v-for="event in events[year][monthWord]" :key="event">
-      <!-- Month -->
-      <span v-for="item in event" :key="item">{{item}}</span>
-    </li>
-  </ul>
+
 </template>
 
 <style scoped>
