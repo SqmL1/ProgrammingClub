@@ -28,9 +28,9 @@
           </li>
           </NuxtLink>
 
-        <NuxtLink to="/calendar">
+        <NuxtLink to="/events">
           <li>
-            <span class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 font-mono">Calendar</span>
+            <span class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 font-mono">Events</span>
           </li>
         </NuxtLink>
 
@@ -39,11 +39,11 @@
             <span class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 font-mono">About Us</span>
           </li>
         </NuxtLink>
-          
+
         <NuxtLink to="/join">
           <li>
             <!-- Need to do this later -->
-            <span href="/join" class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 md:dark:hover:text-link font-mono">Join</span>
+            <span class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 md:dark:hover:text-link font-mono">Join</span>
           </li>
         </NuxtLink>
 
