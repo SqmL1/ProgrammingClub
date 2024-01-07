@@ -27,17 +27,17 @@ useHead({
 
 <template>
    <div>
-      <div>
-         <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Collaborate!</span> We Provide Resources.</h1>
+      <div class="lg:mt-20 md:mt-14 mt-7">
+         <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center text-header-text"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Collaborate!</span> We Provide Resources.</h1>
          <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400 text-center">We believe that our club will provide resources and opputunities to help eachother grow!</p>
-      </div> 
+      </div>
 
       <div class="justify-between py-5">
          <div class="text-center">
             <p class="font-sans text-4xl">These are some resources</p>
          </div>
 
-         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 justify-between py-6">
+         <div class="m-auto w-fit grid grid-cols-2 md:grid-cols-3 gap-4 justify-between py-6">
                <div>
                   <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
 
@@ -46,7 +46,7 @@ useHead({
                   </a>
                </div>
 
-               <div> 
+               <div>
                   <a href="https://neetcode.io/" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
 
                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">NeetCode</h5>
@@ -61,7 +61,7 @@ useHead({
                   </a>
                </div>
 
-               <div> 
+               <div>
                   <a href="https://www.codecademy.com/?utm_id=t_kwd-78958985904710:loc-4104:ag_1263339270701571:cp_370028884:n_o:d_c&msclkid=184fbb407e10102397b8decbd8864c12&utm_source=bing&utm_medium=cpc&utm_campaign=US_Brand_Exact&utm_term=codecademy&utm_content=Codecademy" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
 
                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Codecademy</h5>
@@ -76,11 +76,10 @@ useHead({
                   </a>
                </div>
 
-               <div> 
-                  <a href="https://github.com/" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-
-                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">GitHub</h5>
-                     <p class="font-normal text-gray-700 dark:text-gray-400">Github is a great place to start your programming career!</p>
+               <div>
+                  <a href="https://education.github.com/" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">GitHub Education</h5>
+                     <p class="font-normal text-gray-700 dark:text-gray-400">Github Education provides domain names, hosting, github pro, and more to students.</p>
                   </a>
                </div>
          </div>
