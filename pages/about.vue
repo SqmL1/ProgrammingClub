@@ -3,7 +3,7 @@
         <div class="h-full w-5/6">
             <div>
                 <div class="mx-auto mt-4 p-2">
-                   <h1 class="text-center text-6xl text-header-text bg-white rounded-full">About Us</h1>
+                   <h1 class="text-center text-6xl text-header-text bg-white rounded-full">Student Leadership</h1>
                 </div>
 
                 <div class="flex flex-row-2 justify-center gap-4 mt-10"> <!--Need to get the content in a row on the bottom-->
