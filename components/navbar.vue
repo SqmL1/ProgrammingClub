@@ -22,31 +22,30 @@
       <!-- Links & stuff -->
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
         <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:flex-row md:space-x-16 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-black">
-          <NuxtLink to="/resources">
-          <li>
-            <span class="text-lg block py-2 px-3 text-text-secondary rounded md:hover:bg-transparent md:border-0 md:hover:text-link md:p-0 md:dark:hover:text-link font-mono">Resources</span>
-          </li>
-          </NuxtLink>
+            <NuxtLink to="/resources">
+               <li>
+                  <span class="text-lg block py-2 px-3 text-text-secondary rounded md:hover:bg-transparent md:border-0 md:hover:text-link md:p-0 md:dark:hover:text-link font-mono">Resources</span>
+               </li>
+            </NuxtLink>
 
-        <NuxtLink to="/events">
-          <li>
-            <span class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 font-mono">Events</span>
-          </li>
-        </NuxtLink>
+            <NuxtLink to="/events">
+               <li>
+                  <span class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 font-mono">Events</span>
+               </li>
+            </NuxtLink>
 
-        <NuxtLink to="/about">
-          <li>
-            <span class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 font-mono">About Us</span>
-          </li>
-        </NuxtLink>
+            <NuxtLink to="/join">
+            <li>
+               <!-- Need to do this later -->
+               <span class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 md:dark:hover:text-link font-mono">Join</span>
+            </li>
+           </NuxtLink>
 
-        <NuxtLink to="/join">
-          <li>
-            <!-- Need to do this later -->
-            <span class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 md:dark:hover:text-link font-mono">Join</span>
-          </li>
-        </NuxtLink>
-
+           <NuxtLink to="/about">
+              <li>
+                 <span class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 font-mono">Student Leadership</span>
+              </li>
+           </NuxtLink>
         </ul>
       </div>
     </nav>
