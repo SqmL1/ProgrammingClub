@@ -1,11 +1,6 @@
 <script setup lang="ts">
 import eventsJson from '../events.json';
 
-for (const eventie in eventsJson) {
-  console.log(eventie);
-}
-const events = reactive(eventsJson);
-
 let year = new Date().getFullYear();
 let month = new Date().getMonth();
 
@@ -29,11 +24,7 @@ if (year < 2024) {
   month = 0;
 }
 
-console.log(month);
-console.log(year);
-
 const monthWord = months[month];
-console.log(monthWord)
 
 useSeoMeta({
    description: 'A calendar of events for the Anoka-Ramsey Programming Club',
@@ -57,48 +48,34 @@ useHead({
          href: '/favicon.png'
       }
    ],
-  script: [
-    {
-      src: 'https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/datepicker.min.js'
-    }
-  ]
 })
-import { onMounted } from 'vue'
-import { initFlowbite } from 'flowbite'
 
-// initialize components based on data attribute selectors
-    onMounted(() => {
-    initFlowbite();
-})
+
 </script>
 
 <template>
-   <!-- Using grid to split the two halfs of the page. Should be made reactive l8r -->
-   <div class="flex flex-col m-auto 2xl:mx-auto mt-20 2xl:mt-40 w-fit md:grid md:grid-cols-2 grid-flow-col-dense md:gap-x-12 xl:gap-x-24 2xl:gap-x-52">
-      <div class="m-auto">
-         <h1 class="font-bold text-4xl text-header-text 2xl:w-prose max-w-lg ml-24">Anoka-Ramsey Programming Club Events</h1>
-         <div class="ml-24 m-auto grid grid-cols-2 gap-x-1 content-center justify-items-center">
-            <div>
-               <div class="mb-4">
-                  <h2 class="m-auto max-w-md break-words lg:max-w-lg xl:max-w-xl 2xl:max-w-prose text-lg 2xl:text-xl mt-6 w-fit">Meetings</h2>
-                  <p>Every other week</p>
-               </div>
-               <div class="m-auto">
-                  <!-- Insert times here -->
+   <div>
+      <div class="flex flex-col m-auto 2xl:mx-auto mt-20 2xl:mt-40 w-fit md:grid md:grid-cols-2 grid-flow-col-dense md:gap-x-12 xl:gap-x-24 2xl:gap-x-52">
+         <div class="m-auto">
+            <h1 class="font-bold text-4xl text-header-text 2xl:w-prose max-w-lg ml-24">Anoka-Ramsey Programming Club Events</h1>
+            <div class="ml-24 m-auto grid grid-cols-2 gap-x-1 content-center justify-items-center">
+               <div>
+                  <div class="mb-4">
+                     <h2 class="m-auto max-w-md break-words lg:max-w-lg xl:max-w-xl 2xl:max-w-prose text-lg 2xl:text-xl mt-6 w-fit">Meetings</h2>
+                     <p>Every other week</p>
+                  </div>
+                  <div class="m-auto">
+                     <!-- Insert times here -->
 
+                  </div>
                </div>
-            </div>
 
-            <div>
-               <h2 class="max-w-md break-words lg:max-w-lg xl:max-w-xl 2xl:max-w-prose text-lg 2xl:text-xl mt-6 w-fit">Summary</h2>
-               <!-- Do some fancy javascript here -->
+               <div>
+                  <h2 class="max-w-md break-words lg:max-w-lg xl:max-w-xl 2xl:max-w-prose text-lg 2xl:text-xl mt-6 w-fit">Summary</h2>
+                  <!-- Do some fancy javascript here -->
+               </div>
             </div>
          </div>
       </div>
-      <div>Insert Event List Here</div>
    </div>
 </template>
-
-<style scoped>
-
-</style>
