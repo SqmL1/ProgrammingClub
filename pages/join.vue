@@ -26,28 +26,32 @@ useHead({
 </script>
 
 <template>
-   <div class="flex flex-col m-auto 2xl:mx-auto mt-20 2xl:mt-40 w-fit md:grid md:grid-cols-2 grid-flow-col-dense md:gap-x-12 xl:gap-x-24 2xl:gap-x-52">
-      <div class="m-auto w-fit ">
-       <div class="flex flex-col space-x-16">
-         <h1 class="w-fit text-4xl text-header-text font-bold max-w-prose 2xl:w-prose ml-16 ">Hi, we heard you wanted to join the Anoka-Ramsey Programming Club</h1>
-         <p class="mt-4 text-lg">Anoka Ramsey Programming Club encourages students of all backgrounds and experiences levels to
-            join and start building the necessary skills to land a job and thrive in their careers. All you have
-            to do is fill out this application and connect with our members.
-         </p>
-         <p class="font-bold text-lg lg:text-lg mt-2 w-fit">Campus Independent.</p>
-       </div>
+   <div class="h-5/6">
+      <div class="flex flex-col mt-20w-fit md:grid md:grid-cols-2 grid-flow-col-dense md:gap-x-12 xl:gap-x-24 2xl:gap-x-52 h-full">
+         <div class="m-auto mt-60 w-fit">
+            <div class="flex flex-col space-x-16">
+               <h1 class="w-fit text-4xl text-header-text font-bold max-w-prose 2xl:w-prose ml-16 ">Hi, we heard you wanted to join the Anoka-Ramsey Programming Club</h1>
+               <p class="mt-4 text-lg">Anoka Ramsey Programming Club encourages students of all backgrounds and experiences levels to
+                  join and start building the necessary skills to land a job and thrive in their careers. All you have
+                  to do is fill out this application and connect with our members.
+               </p>
+               <p class="font-bold text-lg lg:text-lg mt-2 w-fit">Campus Independent.</p>
+            </div>
 
 
 
-         <!--Learn more button-->
-      <NuxtLink to="/about">
-         <div class="p-1.5 bg-gradient-to-tl to-blue-400 from-yellow-300 w-fit rounded-full ml-16 mt-4 font-">
-         <button class="bg-white text-black text-2xl position left-6 right-6 w-fit max-w-fit p-3 rounded-full font-bold font-mono "> Learn More</button>
+            <!--Learn more button-->
+            <NuxtLink to="/about">
+               <div class="p-1.5 bg-gradient-to-tl to-blue-400 from-yellow-300 w-fit rounded-full ml-16 mt-4 font-">
+                  <button class="bg-white text-black text-2xl position left-6 right-6 w-fit max-w-fit p-3 rounded-full font-bold font-mono "> Learn More</button>
+               </div>
+            </NuxtLink>
          </div>
-      </NuxtLink>
+         <div class="mt-20">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfdNzcn-2BJ3I9P9hk7zRj3EZehlgQufi72b74V2TlOLTNRnQ/viewform?embedded=true" width="640" frameborder="0" marginheight="0" marginwidth="0" class="h-full">Loading…</iframe>
+         </div>
+
       </div>
-
-        <h1></h1>
-
    </div>
+
 </template>
