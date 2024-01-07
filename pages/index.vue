@@ -32,12 +32,12 @@ useHead({
       <p class="font-bold text-lg lg:text-lg mt-2 w-fit">Campus Independent.</p>
       <!--Join Now button-->
     <NuxtLink to="/join">
-      <div class="p-1.5 bg-gradient-to-tl to-blue-400 from-yellow-300 w-fit rounded-full mt-4">
+      <div class="p-1.5 bg-gradient-to-tl to-blue-400 from-yellow-300 w-fit rounded-full mt-4 shadow-blue-400 shadow-lg">
         <button class="bg-white text-black text-2xl position left-6 right-6 w-fit max-w-fit p-3 rounded-full font-bold font-mono"> Join Now!</button>
       </div>
     </NuxtLink>
       <!--Learn more Section-->
-       <!-- Should we put all this on the same page? --> 
+       <!-- Should we put all this on the same page? -->
     <NuxtLink to="/about">
       <p class="font-bold font-mono mt-44 ">Learn more</p>
       <div class="bg-gradient-to-tl to-blue-400 from-yellow-300 w-fit rounded-full p-1 ">

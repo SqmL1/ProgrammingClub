@@ -37,7 +37,7 @@ useHead({
          <p class="font-bold text-lg lg:text-lg mt-2 w-fit">Campus Independent.</p>
        </div>
 
-       
+
 
          <!--Learn more button-->
       <NuxtLink to="/about">
@@ -48,8 +48,6 @@ useHead({
       </div>
 
         <h1></h1>
-
-
 
    </div>
 </template>
