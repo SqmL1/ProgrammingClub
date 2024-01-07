@@ -31,27 +31,10 @@ useHead({
       <p class="max-w-md break-words lg:max-w-lg xl:max-w-xl 2xl:max-w-prose text-lg 2xl:text-xl mt-6 w-fit text-left">The official place to assist students in pursuing their tech careers through real programming skills, networking opportunities, and peer-to-peer collaboration at <a href="https://www.anokaramsey.edu" class="text-link underline-offset-1 underline">Anoka-Ramsey Community College.</a></p>
       <p class="font-bold text-lg lg:text-lg mt-2 w-fit">Campus Independent.</p>
       <!--Join Now button-->
-      <NuxtLink to="/join" class="relative w-fit rounded-2xl h-fit bg-white hover:bg-gray-100 mt-4">
-         <div
-              class="absolute -inset-1 rounded-2xl bg-gradient-to-tl from-yellow-300 to-link opacity-50 blur z-0 hover:to-blue-500 hover:from-yellow-400"
-         ></div>
-         <div class="relative p-1.5 w-fit rounded-full bg-inherit">
-            <p class="text-black text-2xl position left-6 right-6 w-fit max-w-fit p-3 rounded-full font-bold font-mono bg-inherit">Join Now!</p>
-         </div>
-      </NuxtLink>
+       <InternalLink link="/join" text="Join Now!" class="mt-8"/>
       <!--Learn more Section-->
        <!-- Should we put all this on the same page? -->
-      <NuxtLink to="/about" class="w-fit">
-         <p class="font-bold font-mono mt-10 lg:mt-44 w-fit">Learn more</p>
-         <div class="relative w-fit rounded-2xl h-fit bg-white hover:bg-gray-100">
-            <div
-               class="absolute -inset-0.5 rounded-lg bg-gradient-to-tl from-yellow-300 to-link opacity-50 blur"
-            ></div>
-            <div class="relative w-fit rounded-full p-1 mb-10 lg:mb-0 bg-inherit">
-               <p class="text-3xl font-bold bg-white p-3 px-4 py-2 rounded-full bg-inherit"> > </p>
-            </div>
-         </div>
-      </NuxtLink>
+      <InternalLink link="/about" text="Learn More" class="lg:mt-44"/>
       </div>
 
       <!-- On bigger displays this part splits into the right hand side -->

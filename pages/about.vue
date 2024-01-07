@@ -60,20 +60,12 @@
 
                 </div>
             </div>
-           <div class="w-fit mx-auto relative mt-8 rounded-2xl">
-              <NuxtLink to="/join" class="relative w-fit rounded-2xl h-fit bg-white hover:bg-gray-100">
-                 <div
-                     class="absolute -inset-1 rounded-2xl bg-gradient-to-tl from-yellow-300 to-link opacity-75 blur"
-                 ></div>
-                 <div class="relative p-1.5 w-fit rounded-full bg-inherit">
-                    <p class="bg-white text-black text-2xl p-3 rounded-full font-bold font-mono bg-inherit">Join Now</p>
-                 </div>
-              </NuxtLink>
-           </div>
+           <InternalLink link="join" text="Join Now" class="mx-auto mt-10"/>
 
         </div>
     </div>
 
 </template>
 <script setup lang="ts">
+import Internal_link from "~/components/InternalLink.vue";
 </script>

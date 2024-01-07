@@ -41,16 +41,7 @@ useHead({
 
 
             <!--Learn more button-->
-            <NuxtLink to="/about" class="w-fit">
-               <div class="relative rounded-2xl h-fit bg-white hover:bg-gray-100 mt-4 w-fit">
-                  <div
-                      class="absolute -inset-1 rounded-2xl bg-gradient-to-tl from-yellow-300 to-link opacity-50 blur z-0"
-                  ></div>
-                  <div class="relative p-1.5 w-fit rounded-full bg-inherit">
-                     <p class="bg-white text-black text-2xl max-w-fit p-3 rounded-full font-bold font-mono w-fit bg-inherit">Learn More</p>
-                  </div>
-               </div>
-            </NuxtLink>
+            <InternalLink link="/about" text="Learn More" class="mt-4"/>
          </div>
          <div class="mt-14 lg:mt-0 mx-auto">
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfdNzcn-2BJ3I9P9hk7zRj3EZehlgQufi72b74V2TlOLTNRnQ/viewform?embedded=true" width="640" frameborder="0" marginheight="0" marginwidth="0" class="h-dvh w-5/6 sm:w-[640px] md:h-full">Loading…</iframe>

@@ -38,50 +38,15 @@ useHead({
          </div>
 
          <div class="m-auto w-fit grid grid-cols-2 md:grid-cols-3 gap-4 justify-between py-6">
-               <div>
-                  <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
 
-                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">CS50</h5>
-                     <p class="font-normal text-gray-700 dark:text-gray-400">CS50 is a great free course to learn the fundementals of programming. Not to mention its a free Harvard course!</p>
-                  </a>
-               </div>
+            <ResourceCard link="https://pll.harvard.edu/course/cs50-introduction-computer-science" name="CS50" description="CS50 is a great free course to learn the fundamentals of programming. Not to mention its a free Harvard course" />
+            <ResourceCard link="https://neetcode.io" name="NeetCode" description="NeetCode is a structured way to learn algorithms and data structures if you dont know where to start"/>
+            <ResourceCard link="https://leetcode.com" name="LeetCode" description="LeetCode helps prepare you for technical interviews. A Leetcode problem a day keeps unemployment away" />
+            <ResourceCard link="https://www.codecademy.com" name="Codecademy" description="Codecademy is a course that teaches specific languages rather than the fundamentals"/>
+            <ResourceCard link="https://www.edx.org" name="edX" description="EdX is a website that contains a multitude of courses to learn programming from"/>
+            <ResourceCard link="https://education.github.com" name="Github Education" description="Github Education provides free domain names, hosting, courses, and more to students" />
+            <ResourceCard link="https://cloud.oracle.com" name="Oracle Cloud Free Tier" description="Oracle Cloud offers free ARM Linux VMs for hosting as well as other free services. Credit/Debit card required for signup." />
 
-               <div>
-                  <a href="https://neetcode.io/" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-
-                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">NeetCode</h5>
-                     <p class="font-normal text-gray-700 dark:text-gray-400">NeetCode is a structured way to learn algorithms and data structures if you dont know where to start.</p>
-                  </a>
-               </div>
-               <div>
-                  <a href="https://leetcode.com/" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-
-                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">LeetCode</h5>
-                     <p class="font-normal text-gray-700 dark:text-gray-400">LeetCode helps prepare you for technical interviews. One Leetcode problem a day keeps unemplyment away!</p>
-                  </a>
-               </div>
-
-               <div>
-                  <a href="https://www.codecademy.com/?utm_id=t_kwd-78958985904710:loc-4104:ag_1263339270701571:cp_370028884:n_o:d_c&msclkid=184fbb407e10102397b8decbd8864c12&utm_source=bing&utm_medium=cpc&utm_campaign=US_Brand_Exact&utm_term=codecademy&utm_content=Codecademy" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-
-                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Codecademy</h5>
-                     <p class="font-normal text-gray-700 dark:text-gray-400">Codecademy is a course that teaches specific languages rather than the fundamentals.</p>
-                  </a>
-               </div>
-               <div>
-                  <a href="https://www.edx.org/" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-
-                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">edX</h5>
-                     <p class="font-normal text-gray-700 dark:text-gray-400">EdX is a website that contains a multitude of courses to learn programming from.</p>
-                  </a>
-               </div>
-
-               <div>
-                  <a href="https://education.github.com/" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">GitHub Education</h5>
-                     <p class="font-normal text-gray-700 dark:text-gray-400">Github Education provides domain names, hosting, github pro, and more to students.</p>
-                  </a>
-               </div>
          </div>
       </div>
    </div>
