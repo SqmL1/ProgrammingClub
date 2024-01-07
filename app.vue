@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <div class="h-dvh">
     <Navbar />
-    <NuxtPage />
+     <!-- Should be 80px -->
+     <NuxtPage />
   </div>
 </template>
 
