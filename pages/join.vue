@@ -27,10 +27,10 @@ useHead({
 
 <template>
    <div class="h-5/6">
-      <div class="flex flex-col mt-20w-fit md:grid md:grid-cols-2 grid-flow-col-dense md:gap-x-12 xl:gap-x-24 2xl:gap-x-52 h-full">
-         <div class="m-auto mt-60 w-fit">
-            <div class="flex flex-col space-x-16">
-               <h1 class="w-fit text-4xl text-header-text font-bold max-w-prose 2xl:w-prose ml-16 ">Hi, we heard you wanted to join the Anoka-Ramsey Programming Club</h1>
+      <div class="flex flex-col mt-10 md:mt-20 w-fit lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-x-12 xl:gap-x-24 2xl:gap-x-52 lg:h-full">
+         <div class="m-auto mt-0 w-fit md:ml-16 mx-5 md:mx-0">
+            <div class="flex flex-col">
+               <h1 class="w-fit text-4xl text-header-text font-bold max-w-prose 2xl:w-prose">Hi, we heard you wanted to join the Anoka-Ramsey Programming Club</h1>
                <p class="mt-4 text-lg">Anoka Ramsey Programming Club encourages students of all backgrounds and experiences levels to
                   join and start building the necessary skills to land a job and thrive in their careers. All you have
                   to do is fill out this application and connect with our members.
@@ -41,14 +41,19 @@ useHead({
 
 
             <!--Learn more button-->
-            <NuxtLink to="/about">
-               <div class="p-1.5 bg-gradient-to-tl to-blue-400 from-yellow-300 w-fit rounded-full ml-16 mt-4 font-">
-                  <button class="bg-white text-black text-2xl position left-6 right-6 w-fit max-w-fit p-3 rounded-full font-bold font-mono "> Learn More</button>
+            <NuxtLink to="/about" class="w-fit">
+               <div class="relative rounded-2xl h-fit bg-white hover:bg-gray-100 mt-4 w-fit">
+                  <div
+                      class="absolute -inset-1 rounded-2xl bg-gradient-to-tl from-yellow-300 to-link opacity-50 blur z-0"
+                  ></div>
+                  <div class="relative p-1.5 w-fit rounded-full bg-inherit">
+                     <p class="bg-white text-black text-2xl max-w-fit p-3 rounded-full font-bold font-mono w-fit bg-inherit">Learn More</p>
+                  </div>
                </div>
             </NuxtLink>
          </div>
-         <div class="mt-20">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfdNzcn-2BJ3I9P9hk7zRj3EZehlgQufi72b74V2TlOLTNRnQ/viewform?embedded=true" width="640" frameborder="0" marginheight="0" marginwidth="0" class="h-full">Loading…</iframe>
+         <div class="mt-14 lg:mt-0 mx-auto">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfdNzcn-2BJ3I9P9hk7zRj3EZehlgQufi72b74V2TlOLTNRnQ/viewform?embedded=true" width="640" frameborder="0" marginheight="0" marginwidth="0" class="h-dvh w-5/6 sm:w-[640px] md:h-full">Loading…</iframe>
          </div>
 
       </div>

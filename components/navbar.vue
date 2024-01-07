@@ -10,7 +10,7 @@ function toggleNavbar() {
 
 <template>
   <header>
-    <nav class="flex py-2 bg-gray-700 dark:bg-black flex-wrap items-center justify-between mx-auto px-20">
+    <nav class="flex py-2 bg-gray-700 dark:bg-black flex-wrap items-center justify-between px-5 md:mx-auto md:px-20">
       <!-- Logo as link-->
     <NuxtLink to="/">
       <span class="flex items-center rtl:space-x-revers text-blue-500">
@@ -53,7 +53,7 @@ function toggleNavbar() {
             </li>
            </NuxtLink>
 
-           <NuxtLink to="/student-leadership">
+           <NuxtLink to="/about">
               <li>
                  <span class="text-lg block py-2 px-3 text-text-secondary rounded md:border-0 md:hover:text-link md:p-0 font-mono">Student Leadership</span>
               </li>

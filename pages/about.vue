@@ -60,11 +60,17 @@
 
                 </div>
             </div>
-                <NuxtLink to="/join">
-                    <div class="p-1.5 bg-gradient-to-tl to-blue-400 from-yellow-300 w-fit rounded-2xl mx-auto mt-10">
-                    <button class="bg-white text-black text-2xl position left-6 right-6 w-fit max-w-fit p-3 rounded-xl font-bold ">Join Now!</button>
-                    </div>
-                </NuxtLink>
+           <div class="w-fit mx-auto relative mt-8 rounded-2xl">
+              <NuxtLink to="/join" class="relative w-fit rounded-2xl h-fit bg-white hover:bg-gray-100">
+                 <div
+                     class="absolute -inset-1 rounded-2xl bg-gradient-to-tl from-yellow-300 to-link opacity-75 blur"
+                 ></div>
+                 <div class="relative p-1.5 w-fit rounded-full bg-inherit">
+                    <p class="bg-white text-black text-2xl p-3 rounded-full font-bold font-mono bg-inherit">Join Now</p>
+                 </div>
+              </NuxtLink>
+           </div>
+
         </div>
     </div>
 
