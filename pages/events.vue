@@ -513,7 +513,7 @@ useHead({
                <div class="text-xl w-fit mx-auto md:mx-0 md:text-md lg:text-xl mt-2 font-bold">
                   <h2>Events for</h2>
                </div>
-               <div class="flex md:mx-0 absolute mt-5 md:mt-0 mx-5 md:ml-28 lg:ml-60 z-10 drop-shadow-lg">
+               <div class="flex md:mx-0 absolute mt-5 md:mt-0 mx-5 md:ml-28 lg:ml-56 z-10 drop-shadow-lg">
                   <!-- Dropdown -->
                   <div class="relative">
                      <Listbox v-model="selectedMonth">

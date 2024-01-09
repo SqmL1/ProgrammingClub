@@ -1,15 +1,15 @@
 <template>
-    <div class="flex justify-center">
-        <div class="h-full w-5/6">
+    <div class="flex justify-center w-full">
+        <div class="h-full w-full mx-auto">
             <div>
                 <div class="mx-auto mt-4 p-2">
                    <h1 class="text-center text-6xl text-header-text bg-white rounded-full">Student Leadership</h1>
                 </div>
 
-                <div class="md:flex flex-row-2 justify-center gap-4 mt-10"> <!--Need to get the content in a row on the bottom-->
+                <div class="md:flex mx-auto flex-row-2 justify-center mt-10 space-y-4 lg:space-y-0 lg:space-x-4"> <!--Need to get the content in a row on the bottom-->
 
 
-                    <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="mx-auto lg:mx-0 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <div class="flex flex-col items-center py-10">
 
                            <div class="w-24 h-24 rounded-full shadow-lg overflow-hidden">
@@ -17,15 +17,15 @@
                            </div>
                             <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Daren Bach</h5>
                             <span class="text-sm text-gray-500 dark:text-gray-400">Student/SWE</span>
-                            <span class="text-center mt-2">Hi! I'm Daren, but you can also call me "The Boulder". I am an aspiring Software Engineer!</span>
+                            <span class="text-center mt-2 mx-2 max-w-prose">Hi! I'm Daren, but you can also call me "The Boulder". I am an aspiring Software Engineer!</span>
                             <div class="flex mt-4 md:mt-6">
-                                <a href="https://www.instagram.com/" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add friend</a>
+                                <a href="https://www.instagram.com/" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-header-text rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add friend</a>
                                 <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700 ms-3">Message</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="mx-auto lg:mx-0 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <div class="flex flex-col items-center py-10">
                            <div class="max-w-24 max-h-24 rounded-full shadow-lg overflow-hidden">
                               <img class="w-24" src="../samPFP.jpg" alt="An extreme close up of Sams face. We can see everything Sam, please move the camera back."/>
@@ -33,9 +33,9 @@
 
                             <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Samuil Iordachi</h5>
                             <span class="text-sm text-gray-500 dark:text-gray-400">Student/SWE</span>
-                            <span class="text-center mt-2">Hello, my name is Sam and I am student at Anoka Ramsey and an aspiring software engineer.</span>
+                            <span class="text-center mt-2 mx-2 max-w-prose">Hello, my name is Sam and I am student at Anoka Ramsey and an aspiring software engineer.</span>
                             <div class="flex mt-4 md:mt-6">
-                                <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add friend</a>
+                                <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-header-text rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add friend</a>
                                 <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700 ms-3">Message</a>
                             </div>
                         </div>
@@ -43,16 +43,16 @@
 
 
 
-                    <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="mx-auto lg:mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <div class="flex flex-col items-center py-10">
                            <div class="w-24 h-24 rounded-full shadow-lg overflow-hidden">
                               <img class="w-30" src="/rob.jpg" alt=""/>
                            </div>
                             <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Robert</h5>
                             <span class="text-sm text-gray-500 dark:text-gray-400">Designer/SWE/Student</span>
-                            <span class="text-center mt-2">I develop CLIs, services, and webapps in my spare time, as well as being a student @ ARCC</span>
+                            <span class="text-center mt-2 mx-2 max-w-prose">I develop CLIs, services, and webapps in my spare time, in addition to being a student @ ARCC</span>
                             <div class="flex mt-4 md:mt-6">
-                                <a href="https://github.com/Aervyon" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Github</a>
+                                <a href="https://github.com/Aervyon" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-header-text rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Github</a>
                                 <a href="mailto:robert.knight@my.anokaramsey.edu" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700 ms-3">Email</a>
                             </div>
                         </div>
