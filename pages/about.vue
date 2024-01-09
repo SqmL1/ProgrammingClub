@@ -6,7 +6,7 @@
                    <h1 class="text-center text-6xl text-header-text bg-white rounded-full">Student Leadership</h1>
                 </div>
 
-                <div class="flex flex-row-2 justify-center gap-4 mt-10"> <!--Need to get the content in a row on the bottom-->
+                <div class="md:flex flex-row-2 justify-center gap-4 mt-10"> <!--Need to get the content in a row on the bottom-->
 
 
                     <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

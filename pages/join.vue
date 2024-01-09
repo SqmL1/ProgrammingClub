@@ -26,7 +26,7 @@ useHead({
 </script>
 
 <template>
-   <div class="h-5/6">
+   <div class="md:h-5/6">
       <div class="flex flex-col mt-10 md:mt-20 w-fit lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-x-12 xl:gap-x-24 2xl:gap-x-52 lg:h-full">
          <div class="m-auto mt-0 w-fit md:ml-16 mx-5 md:mx-0">
             <div class="flex flex-col">
@@ -43,8 +43,8 @@ useHead({
             <!--Learn more button-->
             <InternalLink link="/about" text="Learn More" class="mt-4"/>
          </div>
-         <div class="mt-14 lg:mt-0 mx-auto">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfdNzcn-2BJ3I9P9hk7zRj3EZehlgQufi72b74V2TlOLTNRnQ/viewform?embedded=true" width="640" frameborder="0" marginheight="0" marginwidth="0" class="h-dvh w-5/6 sm:w-[640px] md:h-full">Loading…</iframe>
+         <div class="mt-14 lg:mt-0 md:mx-auto">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfdNzcn-2BJ3I9P9hk7zRj3EZehlgQufi72b74V2TlOLTNRnQ/viewform?embedded=true" width="640" frameborder="0" marginheight="0" marginwidth="0" class="h-dvh w-full md:w-5/6 sm:w-[640px] md:h-full">Loading…</iframe>
          </div>
 
       </div>

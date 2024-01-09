@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import eventsJson from '../events.json';
-import { ref, computed, reactive } from 'vue'
+import { ref, computed, reactive, watch } from 'vue'
 import {
    Listbox,
    ListboxButton,
@@ -13,7 +13,9 @@ import {
 } from '@headlessui/vue'
 import {ChevronUpDownIcon, CheckIcon} from '@heroicons/vue/24/solid';
 
-const eventTypes = [
+type eventTypeKeys = "events" | "cancelled" | "meeting" | "day_off"
+
+const eventTypes: {name: eventTypeKeys, formatted: string}[] = [
    {
       name: "events",
       formatted: "Events"
@@ -85,21 +87,34 @@ const currentMonthDays = computed(() => {
    return getMonthDays(selectedMonth.value, selectedYear.value);
 })
 
-const eventWeekModal = reactive({
-   openStatus: false,
-   week: ''
-})
+const eventWeekModal = ref('')
 
 const eventWeekOpenStatus = ref(false);
 
 const openEventWeek = (week: string) => {
-   eventWeekModal.week = week;
+   eventWeekModal.value = week;
    eventWeekOpenStatus.value = true;
 }
 
 const closeEventWeek = () => {
-   eventWeekModal.week = '';
+   eventWeekModal.value = '';
    eventWeekOpenStatus.value = false;
+}
+
+const eventTypeOpen = ref(false);
+const eventType = ref('');
+
+const openType = (type: "cancelled" | "events" | "day_off" | "meeting") => {
+   eventTypeOpen.value = true;
+   eventWeekOpenStatus.value = false;
+   eventType.value = type;
+   console.log("hi!")
+}
+
+const closeType = () => {
+   eventWeekOpenStatus.value = true;
+   eventTypeOpen.value = false;
+   eventType.value = ""
 }
 
 const getWeeks = (month: string, days: number) => {
@@ -151,6 +166,20 @@ interface ARPCWeekEvents {
    events: ARPCEvent<"event">[];
    day_off: ARPCEvent<"day off">[];
    meeting: ARPCEvent<"meeting">[];
+}
+
+const formatDate = (date: number | string) => {
+   const newDate = String(date);
+   if (newDate.endsWith('1')) {
+      return newDate + 'st'
+   }
+   if (newDate.endsWith('2')) {
+      return newDate + 'nd'
+   }
+   if (newDate.endsWith('3')) {
+      return newDate + 'rd'
+   }
+   return newDate + 'th'
 }
 
 const getEvents = (weeks: string[], year: string, month: string) => {
@@ -215,6 +244,15 @@ const eventsThisWeek = computed(() => {
    return undefined
 })
 
+watch(eventWeekModal, async(newWeek: string, _) => {
+   // @ts-expect-error
+   if (eventType.value && (eventsPerSelectedWeek.value[newWeek].events[eventType.value] as ARPCEvent[]).length === 0) {
+      eventType.value = '';
+      eventTypeOpen.value = false;
+      eventWeekOpenStatus.value = true;
+   }
+})
+
 useSeoMeta({
    description: 'A calendar of events for the Anoka-Ramsey Programming Club',
    ogTitle: 'Programming Club Calendar | Anoka Ramsey Programming Club',
@@ -233,7 +271,7 @@ useHead({
    link: [
       {
          rel: 'icon',
-         type: 'imageeventsPerThisWeek[getThisWeek].events.events.length/png',
+         type: 'image/png',
          href: '/favicon.png'
       }
    ],
@@ -244,7 +282,107 @@ useHead({
 <template>
    <div>
       <!-- Modals -->
-      <!-- Week Overview -->
+      <!-- Period Type Information -->
+      <Dialog :open="eventTypeOpen" @close="closeType">
+         <div class="fixed inset-0 bg-black/50 z-10" aria-hidden="true" />
+         <div class="fixed inset-0 flex w-screen items-center justify-center p-4 z-10">
+            <DialogPanel class="text-text rounded-2xl justify-center flex">
+               <div class="md:flex flex-grow rounded-2xl max-w-4xl bg-white">
+                  <div class="bg-gray-300 rounded-2xl hidden lg:block w-2/3 max-w-2xl">
+                     <div class="m-auto mt-0 grid grid-cols-2 gap-4 pt-4 px-4">
+                        <div class="text-xl mt-2 font-bold">
+                           <h2>Events for</h2>
+                        </div>
+                        <div class="flex fixed ml-32 md:ml-38 z-20 drop-shadow-lg">
+                           <!-- Dropdown -->
+                           <div class="z-20">
+                              <Listbox v-model="eventWeekModal">
+                                 <ListboxButton class="p-2 px-2 md:px-4 md:pl-5 bg-white flex hover:text-header-text">
+                                    <div class="md:mr-2">
+                                       {{eventWeekModal}}
+                                    </div>
+                                    <ChevronUpDownIcon class="w-6 ml-2" />
+                                 </ListboxButton>
+                                 <ListboxOptions class="mt-2 bg-white z-20">
+                                    <ListboxOption
+                                        v-for="week in weeks"
+                                        :key="week"
+                                        :value="week"
+                                        class="flex py-1 px-4 hover:bg-text-secondary"
+                                        :class="{
+                                  'text-header-text font-bold': week === eventWeekModal
+                               }"
+                                    >
+                                       <div class="min-w-4 justify-center my-auto">
+                                          <CheckIcon v-if="week === eventWeekModal" class="w-4" />
+                                       </div>
+                                       <div class="ml-4">
+                                          {{ week }}
+                                       </div>
+
+                                    </ListboxOption>
+                                 </ListboxOptions>
+                              </Listbox>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="mt-8">
+                        <EventCard
+                            v-for="type in eventTypes"
+                            :key="type.name"
+                            :border-y="eventTypes.indexOf(type) !== (eventTypes.length - 1)"
+                            :extra-border-top="eventTypes.indexOf(type) === 0"
+                            :border-top="eventTypes.indexOf(type) === (eventTypes.length - 1)"
+                        >
+                           <template v-slot:title>
+                              {{type.formatted}}
+                           </template>
+                           <template v-slot:subtitle>
+                              <p>
+                                 {{
+                                    eventsPerSelectedWeek[eventWeekModal].events[type.name].length === 0 ?
+                                        'None' :
+                                        `${eventsPerSelectedWeek[eventWeekModal].events[type.name].map(lEvent => {
+                                           return formatDate(lEvent.date)
+                                        }).join(", ")}`
+                                 }}
+                              </p>
+                           </template>
+                           <template v-slot:button v-if="eventsPerSelectedWeek[eventWeekModal].events[type.name].length > 0" class="z-auto">
+                              <button class="ml-auto mr-4 bg-white p-3 py-1.5 drop-shadow-lg text-md hover:text-header-text z-auto">More Info</button>
+                           </template>
+                        </EventCard>
+                     </div>
+                  </div>
+                  <div class="bg-white w-full lg:w-2/3 rounded-2xl mt-7 px-5 max-w-prose">
+                     <DialogTitle class="mx-auto w-full">
+                        <h1 class="mx-auto w-fit font-bold">{{eventTypes.find(type => type.name === eventType).formatted}}</h1>
+                     </DialogTitle>
+                     <DialogDescription class="mx-auto w-fit">Showcasing events under the <span class="text-header-text">{{eventTypes.find(type => type.name === eventType).formatted}}</span> label</DialogDescription>
+                     <div
+                         v-for="event in eventsPerSelectedWeek[eventWeekModal].events[eventType]"
+                         :key="event"
+                         class="py-4 px-2"
+                     >
+                        <div class="flex space-x-7 align-middle">
+                           <h2 class="text-header-text my-auto">{{event.timeStart}} {{event.timeEnd ? `- ${event.timeEnd}`:''}}</h2>
+                           <h3 class="text-header-text text-sm my-auto">{{selectedMonth[0].toUpperCase() + selectedMonth.slice(1,3)}}  {{formatDate(event.date)}}, {{event.label[0].toUpperCase() + event.label.slice(1,event.label.length)}}</h3>
+                        </div>
+
+                        <h4 class="text-header-text">{{event.title}}</h4>
+                        <p class="font-sm mt-1">{{event.description}}</p>
+                        <div class="flex space-x-5 mt-1">
+                           <p v-if="event.location" class="my-auto">{{event.location}}</p>
+                           <p v-if="event.locationExtended" class="my-auto">@ {{event.locationExtended}}</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </DialogPanel>
+         </div>
+      </Dialog>
+      <!-- Period Overview -->
       <Dialog :open="eventWeekOpenStatus" @close="closeEventWeek">
          <div class="fixed inset-0 bg-black/50 z-10" aria-hidden="true" />
          <div class="fixed inset-0 flex w-screen items-center justify-center p-4 z-10">
@@ -257,10 +395,10 @@ useHead({
                      <div class="flex fixed ml-32 md:ml-52 z-20 drop-shadow-lg">
                         <!-- Dropdown -->
                         <div class="z-20">
-                           <Listbox v-model="eventWeekModal.week">
+                           <Listbox v-model="eventWeekModal">
                               <ListboxButton class="p-2 px-2 md:px-4 md:pl-5 bg-white flex hover:text-header-text">
                                  <div class="md:mr-6">
-                                    {{eventWeekModal.week}}
+                                    {{eventWeekModal}}
                                  </div>
                                  <ChevronUpDownIcon class="w-6 ml-2" />
                               </ListboxButton>
@@ -271,11 +409,11 @@ useHead({
                                      :value="week"
                                      class="flex py-1 px-4 hover:bg-text-secondary"
                                      :class="{
-                                  'text-header-text font-bold': week === eventWeekModal.week
+                                  'text-header-text font-bold': week === eventWeekModal
                                }"
                                  >
                                     <div class="min-w-4 justify-center my-auto">
-                                       <CheckIcon v-if="week === eventWeekModal.week" class="w-4" />
+                                       <CheckIcon v-if="week === eventWeekModal" class="w-4" />
                                     </div>
                                     <div class="ml-4">
                                        {{ week }}
@@ -301,24 +439,16 @@ useHead({
                         <template v-slot:subtitle>
                            <p>
                               {{
-                                 eventsPerSelectedWeek[eventWeekModal.week].events[type.name].length === 0 ?
+                                 eventsPerSelectedWeek[eventWeekModal].events[type.name].length === 0 ?
                                      'None' :
-                                     `${eventsPerSelectedWeek[eventWeekModal.week].events[type.name].map(lEvent => {
-                                        if (String(lEvent.date).endsWith('1')) {
-                                           return String(lEvent.date) + 'st'
-                                        } else if (String(lEvent.date).endsWith('2')) {
-                                           return String(lEvent.date) + 'nd'
-                                        } else if (String(lEvent.date).endsWith('3')) {
-                                           return String(lEvent.date) + 'rd'
-                                        } else {
-                                           return String(lEvent.date) + 'th'
-                                        }
+                                     `${eventsPerSelectedWeek[eventWeekModal].events[type.name].map(lEvent => {
+                                        return formatDate(lEvent.date)
                                      }).join(", ")}`
                               }}
                            </p>
                         </template>
-                        <template v-slot:button v-if="eventsPerSelectedWeek[eventWeekModal.week].events[type.name].length > 0" class="z-auto">
-                           <button class="ml-auto mr-4 bg-white p-3 py-1.5 drop-shadow-lg text-md hover:text-header-text z-auto">More Info</button>
+                        <template v-slot:button v-if="eventsPerSelectedWeek[eventWeekModal].events[type.name].length > 0" class="z-auto">
+                           <button @click="openType(type.name)" class="ml-auto mr-4 bg-white p-3 py-1.5 drop-shadow-lg text-md hover:text-header-text z-auto">More Info</button>
                         </template>
                      </EventCard>
                   </div>
