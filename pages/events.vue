@@ -477,7 +477,8 @@ useHead({
                   </div>
                   <div class="m-auto">
                      <!-- Insert times here -->
-
+                     <p class="m-auto">Time Unknown</p>
+                     <p class="m-auto">Location Unknown</p>
                   </div>
                </div>
 
