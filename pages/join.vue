@@ -31,9 +31,9 @@ useHead({
          <div class="m-auto mt-0 w-fit md:ml-16 mx-5 md:mx-0">
             <div class="flex flex-col">
                <h1 class="w-fit text-4xl text-header-text font-bold max-w-prose 2xl:w-prose">Hi, we heard you wanted to join the Anoka-Ramsey Programming Club</h1>
-               <p class="mt-4 text-lg">Anoka Ramsey Programming Club encourages students of all backgrounds and experiences levels to
+               <p class="mt-4 text-lg">We encourage students of all backgrounds and experiences levels to
                   join and start building the necessary skills to land a job and thrive in their careers. All you have
-                  to do is fill out this application and connect with our members.
+                  to do is fill out this application to connect with our members.
                </p>
             </div>
 

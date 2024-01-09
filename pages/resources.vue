@@ -43,6 +43,9 @@ useHead({
             <ResourceCard link="https://www.edx.org" name="edX" description="EdX is a website that contains a multitude of courses to learn programming from"/>
             <ResourceCard link="https://education.github.com" name="Github Education" description="Github Education provides free domain names, hosting, courses, and more to students" />
             <ResourceCard link="https://cloud.oracle.com" name="Oracle Cloud Free Tier" description="Oracle Cloud offers free ARM Linux VMs for hosting as well as other free services. Credit/Debit card required for signup." />
+            <ResourceCard link="https://developer.mozilla.org/en-US/" name="MDN Web Docs" description="Documentation useful for all web developers (or backend javascript developers)" />
+            <ResourceCard link="https://devdocs.io" name="Dev Docs" description="Documentation for nearly every developer and system admin" />
+            <ResourceCard link="https://css-tricks.com/" name="CSS Tricks" description="A website based around providing powerful tricks on CSS and cheatsheets (like Flexbox and Grid)" />
 
          </div>
       </div>
