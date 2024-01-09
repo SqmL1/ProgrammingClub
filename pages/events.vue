@@ -11,7 +11,7 @@ import {
    DialogTitle,
    DialogDescription,
 } from '@headlessui/vue'
-import {ChevronUpDownIcon, CheckIcon} from '@heroicons/vue/24/solid';
+import {ChevronUpDownIcon, CheckIcon, XCircleIcon} from '@heroicons/vue/24/solid';
 
 type eventTypeKeys = "events" | "cancelled" | "meeting" | "day_off"
 
@@ -293,7 +293,8 @@ useHead({
                         <div class="text-xl mt-2 font-bold">
                            <h2>Events for</h2>
                         </div>
-                        <div class="flex fixed ml-32 md:ml-38 z-20 drop-shadow-lg">
+
+                        <div class="flex fixed ml-32 md:ml-38 lg:ml-52 z-20 drop-shadow-lg">
                            <!-- Dropdown -->
                            <div class="z-20">
                               <Listbox v-model="eventWeekModal">
@@ -355,8 +356,13 @@ useHead({
                      </div>
                   </div>
                   <div class="bg-white w-full lg:w-2/3 rounded-2xl mt-7 px-5 max-w-prose">
-                     <DialogTitle class="mx-auto w-full">
-                        <h1 class="mx-auto w-fit font-bold">{{eventTypes.find(type => type.name === eventType).formatted}}</h1>
+                     <button @click="closeType" class="mx-auto mr-2 bg-white flex hover:text-header-text">
+                        <XCircleIcon class="w-5 mr-2 my-auto" />
+                     </button>
+                     <DialogTitle class="mx-auto w-full flex">
+                        <div class="w-full flex">
+                           <h1 class="w-fit mx-auto font-bold">{{eventTypes.find(type => type.name === eventType).formatted}}</h1>
+                        </div>
                      </DialogTitle>
                      <DialogDescription class="mx-auto w-fit">Showcasing events under the <span class="text-header-text">{{eventTypes.find(type => type.name === eventType).formatted}}</span> label</DialogDescription>
                      <div
@@ -392,7 +398,10 @@ useHead({
                      <div class="text-xl mt-2 font-bold">
                         <h2>Events for</h2>
                      </div>
-                     <div class="flex fixed ml-32 md:ml-52 z-20 drop-shadow-lg">
+                     <button @click="closeEventWeek" class="mx-auto mt-2 mr-2 flex hover:text-header-text">
+                        <XCircleIcon class="w-5 mr-2 my-auto" />
+                     </button>
+                     <div class="flex absolute ml-32 md:ml-38 lg:ml-40 z-20 drop-shadow-lg">
                         <!-- Dropdown -->
                         <div class="z-20">
                            <Listbox v-model="eventWeekModal">
@@ -504,7 +513,7 @@ useHead({
                <div class="text-xl w-fit mx-auto md:mx-0 md:text-md lg:text-xl mt-2 font-bold">
                   <h2>Events for</h2>
                </div>
-               <div class="flex md:mx-0 fixed mt-5 md:mt-0 mx-5 md:ml-28 lg:ml-60 z-10 drop-shadow-lg">
+               <div class="flex md:mx-0 absolute mt-5 md:mt-0 mx-5 md:ml-28 lg:ml-60 z-10 drop-shadow-lg">
                   <!-- Dropdown -->
                   <div class="relative">
                      <Listbox v-model="selectedMonth">

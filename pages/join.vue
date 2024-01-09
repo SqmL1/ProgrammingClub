@@ -35,7 +35,6 @@ useHead({
                   join and start building the necessary skills to land a job and thrive in their careers. All you have
                   to do is fill out this application and connect with our members.
                </p>
-               <p class="font-bold text-lg lg:text-lg mt-2 w-fit">Campus Independent.</p>
             </div>
 
 
@@ -43,8 +42,8 @@ useHead({
             <!--Learn more button-->
             <InternalLink link="/about" text="Learn More" class="mt-4"/>
          </div>
-         <div class="mt-14 lg:mt-0 md:mx-auto">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfdNzcn-2BJ3I9P9hk7zRj3EZehlgQufi72b74V2TlOLTNRnQ/viewform?embedded=true" width="640" frameborder="0" marginheight="0" marginwidth="0" class="h-dvh w-full md:w-5/6 sm:w-[640px] md:h-full">Loading…</iframe>
+         <div class="mt-14 lg:mt-0">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfdNzcn-2BJ3I9P9hk7zRj3EZehlgQufi72b74V2TlOLTNRnQ/viewform?embedded=true" width="640" frameborder="0" marginheight="0" marginwidth="0" class="h-dvh w-full lg:w-5/6 sm:w-[640px] md:h-full">Loading…</iframe>
          </div>
 
       </div>

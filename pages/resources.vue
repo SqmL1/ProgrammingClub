@@ -34,7 +34,7 @@ useHead({
 
       <div class="justify-between py-5">
 
-         <div class="m-auto w-fit grid grid-cols-2 md:grid-cols-3 gap-4 justify-between py-6">
+         <div class="m-auto w-fit grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-6 justify-stretch">
 
             <ResourceCard link="https://pll.harvard.edu/course/cs50-introduction-computer-science" name="CS50" description="CS50 is a great free course to learn the fundamentals of programming. Not to mention its a free Harvard course" />
             <ResourceCard link="https://neetcode.io" name="NeetCode" description="NeetCode is a structured way to learn algorithms and data structures if you dont know where to start"/>
