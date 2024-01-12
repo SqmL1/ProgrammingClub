@@ -186,7 +186,37 @@ const getEvents = (weeks: string[], year: string, month: string) => {
    const events: Record<string, {length: number, events: ARPCWeekEvents, formatted: string}> = {};
    for (let week of weeks) {
       const days = week.split(" ")[1].split("-");
-      const currentEvents = eventsJson[year][month].events.filter((currentEvent: ARPCEvent) => {
+      // @ts-expect-error
+     // Can't index type string on unknown type is bullshit, this is a json with only strings.
+      const months = eventsJson[year];
+      if (!months) {
+        events[week] = {
+          length: 0,
+          events: {
+            cancelled: [],
+            events: [],
+            meeting: [],
+            day_off: []
+          },
+          formatted: 'No Events',
+        }
+        continue;
+      }
+      const eventArray = months[month];
+      if (!eventArray) {
+        events[week] = {
+          length: 0,
+          events: {
+            cancelled: [],
+            events: [],
+            meeting: [],
+            day_off: []
+          },
+          formatted: 'No Events',
+        }
+        continue;
+      }
+      const currentEvents = eventArray.events.filter((currentEvent: ARPCEvent) => {
          if (!currentEvent.date) {
             return false;
          }
