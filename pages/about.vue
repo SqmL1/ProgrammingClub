@@ -67,5 +67,4 @@
 
 </template>
 <script setup lang="ts">
-import Internal_link from "~/components/InternalLink.vue";
 </script>
