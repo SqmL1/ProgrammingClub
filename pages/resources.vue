@@ -28,13 +28,13 @@ useHead({
       <div class="justify-between py-5">
 
          <div class="m-auto w-fit grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-6 justify-stretch">
-
+            <ResourceCard link="https://ohshitgit.com" name="Oh Shit Git!?" description="For when you fuck up in git and need to undo it" />
+            <ResourceCard link="https://education.github.com" name="Github Education" description="Github Education provides free domain names, hosting, courses, and more to students" />
             <ResourceCard link="https://pll.harvard.edu/course/cs50-introduction-computer-science" name="CS50" description="CS50 is a great free course to learn the fundamentals of programming. Not to mention its a free Harvard course" />
             <ResourceCard link="https://neetcode.io" name="NeetCode" description="NeetCode is a structured way to learn algorithms and data structures if you dont know where to start"/>
             <ResourceCard link="https://leetcode.com" name="LeetCode" description="LeetCode helps prepare you for technical interviews. A Leetcode problem a day keeps unemployment away" />
             <ResourceCard link="https://www.codecademy.com" name="Codecademy" description="Codecademy is a course that teaches specific languages rather than the fundamentals"/>
             <ResourceCard link="https://www.edx.org" name="edX" description="EdX is a website that contains a multitude of courses to learn programming from"/>
-            <ResourceCard link="https://education.github.com" name="Github Education" description="Github Education provides free domain names, hosting, courses, and more to students" />
             <ResourceCard link="https://cloud.oracle.com" name="Oracle Cloud Free Tier" description="Oracle Cloud offers free ARM Linux VMs for hosting as well as other free services. Credit/Debit card required for signup." />
             <ResourceCard link="https://developer.mozilla.org/en-US/" name="MDN Web Docs" description="Documentation useful for all web developers (or backend javascript developers)" />
             <ResourceCard link="https://devdocs.io" name="Dev Docs" description="Documentation for nearly every developer and system admin" />
