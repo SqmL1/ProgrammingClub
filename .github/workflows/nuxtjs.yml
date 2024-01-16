@@ -32,8 +32,8 @@ jobs:
     # Deploy to the github_pages environment
     environment:
       name: github_pages
-    #  url: ${{ steps.deployment.outputs.page_url }}
-      url: arpc.aervyon.com
+      url: ${{ steps.deployment.outputs.page_url }}
+      # url: arpc.aervyon.com
     # Specify runner + deployment step
     runs-on: ubuntu-latest
     steps:
