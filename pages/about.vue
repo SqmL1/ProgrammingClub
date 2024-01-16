@@ -13,7 +13,7 @@
                         <div class="flex flex-col items-center py-10">
 
                            <div class="w-24 h-24 rounded-full shadow-lg overflow-hidden">
-                              <img class="w-30" src="/test.JPG" alt="A picture of Daren in a black jean jacket with collar folded over"/>
+                              <img class="w-30" src="/daren.jpg" alt="A picture of Daren in a black jean jacket with collar folded over"/>
                            </div>
                             <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Daren Bach</h5>
                             <span class="text-sm text-gray-500 dark:text-gray-400">Student/SWE</span>
