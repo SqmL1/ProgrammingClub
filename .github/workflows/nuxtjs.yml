@@ -17,6 +17,9 @@ jobs:
       # Pick your own package manager and build script
       - run: npm install
       - run: npm run build --preset=github_pages
+        env:
+          NITRO_PRESET: github_pages
+      - run: ls ./.output/public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
@@ -33,6 +36,7 @@ jobs:
     environment:
       name: github_pages
       url: ${{ steps.deployment.outputs.page_url }}
+      # url: arpc.aervyon.com
     # Specify runner + deployment step
     runs-on: ubuntu-latest
     steps:
