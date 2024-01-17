@@ -31,15 +31,15 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
-      title: 'Anoka-Ramsey Programming Club',
+      title: 'DevC2 | Anoka-Ramsey Programming Club',
       meta: [
         {
           property: 'og:title',
-          content: 'Anoka-Ramsey Programming Club'
+          content: 'DevC2 | The Anoka-Ramsey Programming Club'
         },
         {
           property: 'og:icon',
-          content: '/logo-bold.svg'
+          content: '/DevC2.svg'
         },
         {
           property: 'description',
@@ -47,11 +47,11 @@ export default defineNuxtConfig({
         },
         {
           property: 'icon',
-          content: '/logo-bold.svg'
+          content: '/DevC2.svg'
         },
         {
           property: 'og:image',
-          content: './logo-bold.svg'
+          content: './DevC2.svg'
         }
       ],
       link: [

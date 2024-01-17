@@ -284,11 +284,11 @@ watch(eventWeekModal, async(newWeek: string, _) => {
 })
 
 useSeoMeta({
-   description: 'A calendar of events for the Anoka-Ramsey Programming Club',
-   ogTitle: 'Programming Club Calendar | Anoka Ramsey Programming Club',
-   ogDescription: 'A calendar of events for the Anoka-Ramsey Programming Club',
+   description: 'A calendar of events for DevC2',
+   ogTitle: 'Calendar | DevC2',
+   ogDescription: 'A calendar of events for DevC2',
    ogImage: '/logo-bold.svg',
-   twitterTitle: 'Programming Club Calendar | Anoka Ramsey Programming Club',
+   twitterTitle: 'Calendar | DevC2',
    twitterDescription: 'A calendar of events for the Anoka-Ramsey Programming Club',
    twitterImage: '/logo-bold.svg',
    ogLocale: 'en-US'

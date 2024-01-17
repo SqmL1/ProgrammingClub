@@ -1,10 +1,10 @@
 <script setup lang="ts">
 useSeoMeta({
    description: 'The coding club for programmers of all levels at Anoka-Ramsey Community College',
-   ogTitle: 'Anoka-Ramsey Programming Club',
+   ogTitle: 'DevC2',
    ogDescription: 'The club for programmers of all levels at Anoka-Ramsey Community College',
    ogImage: '/logo-bold.svg',
-   twitterTitle: 'Anoka-Ramsey Programming Club',
+   twitterTitle: 'DevC2',
    twitterDescription: 'The club for programmers of all levels at Anoka-Ramsey Community College',
    twitterImage: '/logo-bold.svg',
    ogLocale: 'en-US'

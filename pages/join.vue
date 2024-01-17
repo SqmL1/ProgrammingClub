@@ -1,11 +1,11 @@
 <script setup lang="ts">
 useSeoMeta({
-   title: 'Join the AR Coding Club',
+   title: 'Join DevC2',
    description: 'Join the club for programmers of all levels at Anoka-Ramsey Community College',
-   ogTitle: 'Join the AR Programming Club',
+   ogTitle: 'Join DevC2',
    ogDescription: 'Join the coding club for programmers of all levels at Anoka-Ramsey Community College',
    ogImage: '/logo-bold.svg',
-   twitterTitle: 'Join the AR Programming Club',
+   twitterTitle: 'Join DevC2',
    twitterDescription: 'Join the club for programmers of all levels at Anoka-Ramsey Community College',
    twitterImage: '/logo-bold.svg',
    ogLocale: 'en-US'
