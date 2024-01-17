@@ -20,9 +20,8 @@ useHead({
 <template>
   <div class="flex flex-col m-auto 2xl:mx-auto mt-10 md:mt-20 2xl:mt-40 w-fit md:grid md:grid-cols-2 grid-flow-col-dense md:gap-x-12 xl:gap-x-24 2xl:gap-x-52">
     <div class="w-fit text-lg flex flex-col mx-5 md:mx-0 md:ml-24">
-      <h1 class="font-bold text-4xl text-header-text 2xl:w-prose max-w-lg">Anoka-Ramsey Programming Club (ARPC)</h1>
+      <h1 class="font-bold text-4xl text-header-text 2xl:w-prose max-w-lg">DevC<sup>2</sup></h1>
       <p class="max-w-md break-words lg:max-w-lg xl:max-w-xl 2xl:max-w-prose text-lg 2xl:text-xl mt-6 w-fit text-left">The official place to assist students in pursuing their tech careers through real programming skills, networking opportunities, and peer-to-peer collaboration at <a href="https://www.anokaramsey.edu" class="text-link underline-offset-1 underline">Anoka-Ramsey Community College.</a></p>
-      <p class="font-bold text-lg lg:text-lg mt-2 w-fit">Campus Independent.</p>
       <!--Join Now button-->
        <div class="flex mt-8 mb-8">
           <InternalLink link="/join" text="Join Now!"/>

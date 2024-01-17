@@ -489,23 +489,23 @@ useHead({
          </div>
 
       </Dialog>
-      <div class="flex flex-col mx-5 m-auto md:mx-auto mt-10 md:mt-20 2xl:mt-40 w-fit md:grid md:grid-cols-2 grid-flow-col-dense md:gap-x-12 xl:gap-x-24 2xl:gap-x-52">
+      <div class="flex flex-col mx-5 m-auto md:mx-auto mt-10 md:mt-20 2xl:mt-40 md:grid md:grid-cols-2 grid-flow-col-dense md:gap-x-12 xl:gap-x-24 2xl:gap-x-52">
          <div class="mx-5 lg:mx-auto">
-            <h1 class="font-bold text-4xl text-header-text 2xl:w-prose max-w-lg">Anoka-Ramsey Programming Events</h1>
+            <h1 class="font-bold text-4xl text-header-text 2xl:w-prose max-w-lg w-fit m-auto">DevC<sup>2</sup> Events</h1>
             <div class="m-auto md:grid grid-cols-2 gap-x-1 content-center justify-items-center">
                <div>
                   <div class="mb-4">
                      <h2 class="m-auto max-w-md break-words lg:max-w-lg xl:max-w-xl 2xl:max-w-prose text-lg 2xl:text-xl mt-6 w-fit">Meetings</h2>
                      <p class="m-auto max-w-md text-md w-fit">Every other week</p>
                   </div>
-                  <div class="m-auto">
+                  <div class="mx-auto w-fit">
                      <!-- Insert times here -->
-                     <p class="m-auto">Time Unknown</p>
-                     <p class="m-auto">Location Unknown</p>
+                     <p>Time Unknown</p>
+                     <p>Location Unknown</p>
                   </div>
                </div>
 
-               <div class="mb-10 md:mb-0">
+               <div class="mb-10 md:mb-0 md:ml-10">
                   <h2 class="mx-auto max-w-md break-words lg:max-w-lg xl:max-w-xl 2xl:max-w-prose text-lg 2xl:text-xl mt-6 w-fit">Weekly Summary</h2>
                   <p
                       class="mx-auto max-w-md break-words lg:max-w-lg xl:max-w-xl 2xl:max-w-prose text-md 2xl:text-lg mt-2 w-fit"
@@ -532,7 +532,7 @@ useHead({
                </div>
             </div>
          </div>
-         <div class="bg-gray-300 rounded-2xl drop-shadow-lg">
+         <div class="bg-gray-300 rounded-2xl drop-shadow-lg lg:w-lg w-fit mx-auto">
             <div class="m-auto mb-20 md:mb-0 md:grid grid-cols-2 gap-4 mt-4 px-4">
                <div class="text-xl w-fit mx-auto md:mx-0 md:text-md lg:text-xl mt-2 font-bold">
                   <h2>Events for</h2>

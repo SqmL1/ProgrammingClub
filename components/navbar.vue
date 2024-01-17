@@ -14,7 +14,7 @@ function toggleNavbar() {
       <!-- Logo as link-->
     <NuxtLink to="/">
       <span class="flex items-center rtl:space-x-revers text-blue-500">
-        <img src="/image/logo-bold.svg" alt="AR Coding Club logo">
+        <img src="/image/DevC2.svg" alt="AR Coding Club logo">
       </span>
     </NuxtLink>
 
