@@ -58,7 +58,7 @@ const monthWord = months[month];
 
 const selectedMonth = ref(monthWord);
 
-const years = [];
+const years: number[] = [];
 let start = 2024;
 if (currentYear >= 2026) {
    start = currentYear - 1; // Only show records for the last year and current year
@@ -313,7 +313,7 @@ useHead({
                <div class="md:flex flex-grow rounded-2xl max-w-4xl bg-white">
                   <div class="bg-gray-300 rounded-2xl hidden lg:block w-2/3 max-w-2xl">
                      <div class="m-auto mt-0 grid grid-cols-2 gap-4 pt-4 px-4">
-                        <div class="text-xl mt-2 font-bold">
+                        <div class="text-xl mt-2 font-bold font-heading">
                            <h2>Events for</h2>
                         </div>
 
@@ -351,12 +351,11 @@ useHead({
                         </div>
                      </div>
                      <div class="mt-8">
-                        <EventCard
-                            v-for="type in eventTypes"
-                            :key="type.name"
-                            :border-y="eventTypes.indexOf(type) !== (eventTypes.length - 1)"
-                            :extra-border-top="eventTypes.indexOf(type) === 0"
-                            :border-top="eventTypes.indexOf(type) === (eventTypes.length - 1)"
+                        <EventCard v-for="type in eventTypes"
+                           :key="type.name"
+                           :borderY="eventTypes.indexOf(type) !== (eventTypes.length - 1)"
+                           :extraBorderTop="eventTypes.indexOf(type) === 0"
+                           :borderTop="eventTypes.indexOf(type) === (eventTypes.length - 1)"
                         >
                            <template v-slot:title>
                               {{type.formatted}}
@@ -367,6 +366,7 @@ useHead({
                                     eventsPerSelectedWeek[eventWeekModal].events[type.name].length === 0 ?
                                         'None' :
                                         `${eventsPerSelectedWeek[eventWeekModal].events[type.name].map(lEvent => {
+                                           // @ts-expect-error
                                            return formatDate(lEvent.date)
                                         }).join(", ")}`
                                  }}
@@ -376,6 +376,7 @@ useHead({
                               <button class="ml-auto mr-4 bg-white p-3 py-1.5 drop-shadow-lg text-md hover:text-header-text z-auto">More Info</button>
                            </template>
                         </EventCard>
+
                      </div>
                   </div>
                   <div class="bg-white w-full lg:w-2/3 rounded-2xl mt-7 px-5 max-w-prose">
@@ -384,10 +385,19 @@ useHead({
                      </button>
                      <DialogTitle class="mx-auto w-full flex">
                         <div class="w-full flex">
-                           <h1 class="w-fit mx-auto font-bold">{{eventTypes.find(type => type.name === eventType).formatted}}</h1>
+                           <h1 class="w-fit mx-auto font-bold font-heading">{{
+                              // @ts-expect-error
+                              eventTypes.find(type => type.name === eventType).formatted
+                           }}</h1>
                         </div>
                      </DialogTitle>
-                     <DialogDescription class="mx-auto w-fit">Showcasing events under the <span class="text-header-text">{{eventTypes.find(type => type.name === eventType).formatted}}</span> label</DialogDescription>
+                     <DialogDescription class="mx-auto w-fit">
+                        Showcasing events under the <span class="text-header-text">{{
+                        // @ts-expect-error
+                        eventTypes.find(type => type.name === eventType).formatted
+                        }}</span> label
+                     </DialogDescription>
+                     
                      <div
                          v-for="event in eventsPerSelectedWeek[eventWeekModal].events[eventType]"
                          :key="event"
@@ -414,11 +424,11 @@ useHead({
       <!-- Period Overview -->
       <Dialog :open="eventWeekOpenStatus" @close="closeEventWeek">
          <div class="fixed inset-0 bg-black/50 z-10" aria-hidden="true" />
-         <div class="fixed inset-0 flex w-screen items-center justify-center p-4 z-10">
+         <div class="fixed inset-0 flex w-screen items-center justify-center p-4 z-10 font-content">
             <DialogPanel class="bg-white text-text rounded-2xl justify-center flex flex-col w-full max-w-sm">
                <div class="bg-gray-300 rounded-2xl">
                   <DialogTitle class="m-auto grid grid-cols-2 gap-4 mt-4 px-4">
-                     <div class="text-xl mt-2 font-bold">
+                     <div class="text-xl mt-2 font-bold font-heading">
                         <h2>Events for</h2>
                      </div>
                      <button @click="closeEventWeek" class="mx-auto mt-2 mr-2 flex hover:text-header-text">
@@ -472,15 +482,16 @@ useHead({
                            <p>
                               {{
                                  eventsPerSelectedWeek[eventWeekModal].events[type.name].length === 0 ?
-                                     'None' :
-                                     `${eventsPerSelectedWeek[eventWeekModal].events[type.name].map(lEvent => {
-                                        return formatDate(lEvent.date)
-                                     }).join(", ")}`
+                                    'None' :
+                                    `${eventsPerSelectedWeek[eventWeekModal].events[type.name].map(lEvent => {
+                                         // @ts-expect-error
+                                       return formatDate(lEvent.date)
+                                    }).join(", ")}`
                               }}
                            </p>
                         </template>
                         <template v-slot:button v-if="eventsPerSelectedWeek[eventWeekModal].events[type.name].length > 0" class="z-auto">
-                           <button @click="openType(type.name)" class="ml-auto mr-4 bg-white p-3 py-1.5 drop-shadow-lg text-md hover:text-header-text z-auto">More Info</button>
+                           <button @click="openType(type.name)" class="bg-white sm:ml-28 lg:-ml-28 p-3 md:py-1.5 drop-shadow-lg text-md hover:text-header-text z-auto">More Info</button>
                         </template>
                      </EventCard>
                   </div>
@@ -491,22 +502,22 @@ useHead({
       </Dialog>
       <div class="flex flex-col mx-5 m-auto md:mx-auto mt-10 md:mt-20 2xl:mt-40 md:grid md:grid-cols-2 grid-flow-col-dense md:gap-x-12 xl:gap-x-24 2xl:gap-x-52">
          <div class="mx-5 lg:mx-auto">
-            <h1 class="font-bold text-4xl text-header-text 2xl:w-prose max-w-lg w-fit m-auto">DevC<sup>2</sup> Events</h1>
-            <div class="m-auto md:grid grid-cols-2 gap-x-1 content-center justify-items-center">
+            <h1 class="font-bold text-4xl text-header-text 2xl:w-prose max-w-lg w-fit m-auto font-heading">DevC<sup>2</sup> Events</h1>
+            <div class="m-auto md:grid grid-cols-2 gap-x-1 content-center justify-items-center font-content">
                <div>
                   <div class="mb-4">
-                     <h2 class="m-auto max-w-md break-words lg:max-w-lg xl:max-w-xl 2xl:max-w-prose text-lg 2xl:text-xl mt-6 w-fit">Meetings</h2>
+                     <h2 class="m-auto max-w-md break-words lg:max-w-lg xl:max-w-xl 2xl:max-w-prose text-lg 2xl:text-xl mt-6 w-fit font-bold">Meetings</h2>
                      <p class="m-auto max-w-md text-md w-fit">Every other week</p>
                   </div>
                   <div class="mx-auto w-fit">
                      <!-- Insert times here -->
-                     <p>Time Unknown</p>
-                     <p>Location Unknown</p>
+                     <p class="font-semibold">Time Unknown</p>
+                     <p class="font-semibold">Location Unknown</p>
                   </div>
                </div>
 
                <div class="mb-10 md:mb-0 md:ml-10">
-                  <h2 class="mx-auto max-w-md break-words lg:max-w-lg xl:max-w-xl 2xl:max-w-prose text-lg 2xl:text-xl mt-6 w-fit">Weekly Summary</h2>
+                  <h2 class="mx-auto max-w-md break-words lg:max-w-lg xl:max-w-xl 2xl:max-w-prose text-lg 2xl:text-xl mt-6 w-fit font-bold">Weekly Summary</h2>
                   <p
                       class="mx-auto max-w-md break-words lg:max-w-lg xl:max-w-xl 2xl:max-w-prose text-md 2xl:text-lg mt-2 w-fit"
                       v-if="eventsThisWeek && eventsThisWeek.events.events.length > 0"
@@ -534,7 +545,7 @@ useHead({
          </div>
          <div class="bg-gray-300 rounded-2xl drop-shadow-lg lg:w-lg w-fit mx-auto">
             <div class="m-auto mb-20 md:mb-0 md:grid grid-cols-2 gap-4 mt-4 px-4">
-               <div class="text-xl w-fit mx-auto md:mx-0 md:text-md lg:text-xl mt-2 font-bold">
+               <div class="text-xl w-fit mx-auto md:mx-0 md:text-md lg:text-xl mt-2 font-bold font-heading">
                   <h2>Events for</h2>
                </div>
                <div class="flex md:mx-0 absolute mt-5 md:mt-0 mx-5 md:ml-28 lg:ml-56 z-10 drop-shadow-lg">

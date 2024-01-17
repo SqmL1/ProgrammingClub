@@ -22,6 +22,11 @@ module.exports = {
         "bg-tertiary": "#006590",
         "link": "#0194D3",
         "gradient-about": ["#006590", ""]
+      },
+      fontFamily: {
+        heading: 'Raleway',
+        content: 'Open Sans',
+        extra: 'JetBrains Mono'
       }
     },
   },

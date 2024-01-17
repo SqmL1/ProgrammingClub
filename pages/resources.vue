@@ -20,7 +20,7 @@ useHead({
 
 <template>
    <div>
-      <div class="lg:mt-20 md:mt-14 mt-7">
+      <div class="lg:mt-20 md:mt-14 mt-7 font-heading">
          <h1 class="mb-4 text-3xl font-extrabold dark:text-white md:text-5xl lg:text-6xl text-center text-header-text"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Collaborate!</span> We Provide Resources.</h1>
          <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400 text-center">We provide resources and opportunities to help you grow as a developer. Here are some.</p>
       </div>

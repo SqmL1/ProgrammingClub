@@ -17,8 +17,8 @@ const props = defineProps<{
          'border border-gray-200 dark:border-gray-700 shadow': !border
       }">
 
-         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{name}}</h5>
-         <div class="font-normal text-gray-700 dark:text-gray-400"><slot /></div>
+         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-extra">{{name}}</h5>
+         <div class="font-normal text-gray-700 dark:text-gray-400 font-content"><slot /></div>
       </div>
    </div>
 </template>

@@ -12,7 +12,7 @@ defineProps<{
              class="absolute -inset-1 bg-gradient-to-tl rounded-full from-yellow-300 to-link opacity-75 blur"
          ></div>
          <div class="relative p-1.5 w-fit rounded-full bg-inherit">
-            <p class="text-black text-lg md:text-2xl p-3 rounded-full font-bold font-mono bg-inherit">{{text}}</p>
+            <p class="text-black text-lg md:text-2xl p-3 rounded-full font-bold bg-inherit font-extra">{{text}}</p>
          </div>
       </NuxtLink>
    </div>

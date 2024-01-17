@@ -20,10 +20,10 @@ useHead({
 
 <template>
    <div class="md:h-5/6">
-      <div class="flex flex-col mt-10 md:mt-20 w-fit lg:w-full lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-x-12 xl:gap-x-24 2xl:gap-x-52 lg:h-full">
+      <div class="flex flex-col mt-10 md:mt-20 w-fit lg:w-full lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-x-12 xl:gap-x-24 2xl:gap-x-52 lg:h-full font-content">
          <div class="m-auto mt-0 w-fit md:ml-16 mx-5 md:mx-0">
             <div class="flex flex-col">
-               <h1 class="w-fit text-4xl text-header-text font-bold max-w-prose 2xl:w-prose">Hi, we heard you wanted to join DevC<sup>2</sup></h1>
+               <h1 class="w-fit text-4xl text-header-text font-bold max-w-prose 2xl:w-prose font-heading">Hi, we heard you wanted to join DevC<sup>2</sup></h1>
                <p class="mt-4 text-lg max-w-prose">We encourage students of all backgrounds and experiences levels to
                   join and start building the necessary skills to land a job and thrive in their careers. All you have
                   to do is fill out this application to connect with our members.

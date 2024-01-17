@@ -1,5 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  modules: [
+    ['@nuxtjs/google-fonts', {
+      families: {
+        Raleway: {wght: [400, 600, 700]},
+        'Open Sans': {wght: [400, 600, 700]},
+        'JetBrains Mono': {wght: [400, 600, 700]}
+      },
+      useStylesheet: true
+    }]
+  ],
   ssr: false,
   devtools: {
     enabled: true,
