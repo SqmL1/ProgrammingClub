@@ -287,10 +287,10 @@ useSeoMeta({
    description: 'Events for DevC2',
    ogTitle: 'Events | DevC2',
    ogDescription: 'Events for DevC2',
-   ogImage: '/logo-bold.svg',
+   ogImage: '/DevC2.svg',
    twitterTitle: 'Events | DevC2',
    twitterDescription: 'Events for the Anoka-Ramsey Programming Club',
-   twitterImage: '/logo-bold.svg',
+   twitterImage: '/DevC2.svg',
    ogLocale: 'en-US'
 })
 

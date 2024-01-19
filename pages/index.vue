@@ -3,10 +3,10 @@ useSeoMeta({
    description: 'The coding club for programmers of all levels at Anoka-Ramsey Community College',
    ogTitle: 'DevC2',
    ogDescription: 'The club for programmers of all levels at Anoka-Ramsey Community College',
-   ogImage: '/logo-bold.svg',
+   ogImage: '/DevC2.svg',
    twitterTitle: 'DevC2',
    twitterDescription: 'The club for programmers of all levels at Anoka-Ramsey Community College',
-   twitterImage: '/logo-bold.svg',
+   twitterImage: '/DevC2.svg',
    ogLocale: 'en-US'
 })
 

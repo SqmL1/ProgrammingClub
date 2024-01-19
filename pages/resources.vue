@@ -4,10 +4,10 @@ useSeoMeta({
    description: 'We have listed coding resources that are available for college students, resources like tutorials, documentation, coding camps, and free or discounted services and products!',
    ogTitle: 'Coding resources for college students | DevC2',
    ogDescription: 'We have listed coding resources that are available for college students, resources like tutorials, documentation, coding camps, and free or discounted services and products!',
-   ogImage: '/logo-bold.svg',
+   ogImage: '/DevC2.svg',
    twitterTitle: 'Coding resources for college students | DevC2',
    twitterDescription: 'We have listed coding resources that are available for college students, resources like tutorials, documentation, coding camps, and free or discounted services and products!',
-   twitterImage: '/logo-bold.svg',
+   twitterImage: '/DevC2.svg',
    ogLocale: 'en-US'
 })
 
