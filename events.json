@@ -1,28 +1,28 @@
 {
-  "2024": {
-    "january": {
-      "events": [
-        {
-          "title": "Speaker",
-          "description": "We have a security expert coming into tell us about the importance of security and give resources to research it more",
-          "timeStart": "16:00",
-          "timeEnd": "19:00",
-          "location": "Room BN207",
-          "locationExtended": "Coon Rapids Campus",
-          "date": "8",
-          "label": "event"
-        },
-        {
-          "title": "Speaker",
-          "description": "We have a security expert coming into tell us about the importance of security and give resources to research it more",
-          "timeStart": "16:00",
-          "timeEnd": "19:00",
-          "location": "Room BN207",
-          "locationExtended": "Coon Rapids Campus",
-          "date": "9",
-          "label": "event"
-        }
-      ]
-    }
-  }
+	"2024": {
+		"january": {
+			"events": [
+				{
+					"title": "Speaker",
+					"description": "We have a security expert coming into tell us about the importance of security and give resources to research it more",
+					"timeStart": "16:00",
+					"timeEnd": "19:00",
+					"location": "Room BN207",
+					"locationExtended": "Coon Rapids Campus",
+					"date": "8",
+					"label": "event"
+				},
+				{
+					"title": "Speaker",
+					"description": "We have a security expert coming into tell us about the importance of security and give resources to research it more",
+					"timeStart": "16:00",
+					"timeEnd": "19:00",
+					"location": "Room BN207",
+					"locationExtended": "Coon Rapids Campus",
+					"date": "9",
+					"label": "event"
+				}
+			]
+		}
+	}
 }

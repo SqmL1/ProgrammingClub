@@ -1,0 +1,9 @@
+{
+    "prettier.vueIndentScriptAndStyle": true,
+    "prettier.useTabs": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.indentSize": "tabSize",
+    "editor.tabSize": 4,
+    "editor.autoIndent": "full",
+    "editor.insertSpaces": false
+}
