@@ -28,7 +28,7 @@ useHead({
       <div class="justify-between py-5">
 
          <div class="m-auto w-fit grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-6 justify-stretch">
-            <ResourceCard link="https://ohshitgit.com" name="Oh Shit Git!?" description="For when you fuck up in git and need to undo it" />
+            <ResourceCard link="https://ohshitgit.com" name="Oh Shit Git!?" description="Website showcasing you how to undo mistakes in Git" />
             <ResourceCard link="https://education.github.com" name="Github Education" description="Github Education provides free domain names, hosting, courses, and more to students" />
             <ResourceCard link="https://pll.harvard.edu/course/cs50-introduction-computer-science" name="CS50" description="CS50 is a great free course to learn the fundamentals of programming. Not to mention its a free Harvard course" />
             <ResourceCard link="https://neetcode.io" name="NeetCode" description="NeetCode is a structured way to learn algorithms and data structures if you dont know where to start"/>
