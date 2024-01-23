@@ -709,18 +709,18 @@
 					</div>
 				</div>
 			</div>
-			<div class="bg-gray-300 rounded-2xl drop-shadow-lg lg:w-lg w-fit mx-auto">
-				<div class="m-auto mb-20 md:mb-0 md:grid grid-cols-2 gap-4 mt-4 px-4">
+			<div class="bg-gray-300 rounded-2xl drop-shadow-lg lg:min-w-2xl mx-auto">
+				<div class="m-auto mb-32 md:mb-0 md:grid grid-cols-2 gap-4 mt-4 px-4">
 					<div
-						class="text-xl w-fit mx-auto md:mx-0 md:text-md lg:text-xl mt-2 font-bold font-heading"
+						class="text-xl w-fit mx-4 md:mx-0 md:text-md lg:text-xl mt-2 font-bold font-heading"
 					>
 						<h2>Events for</h2>
 					</div>
 					<div
-						class="flex md:mx-0 absolute mt-5 md:mt-0 mx-5 md:ml-28 lg:ml-56 z-10 drop-shadow-lg"
+						class="md:flex md:mx-0 absolute mt-5 md:mt-0 mx-5 md:ml-28 z-10 drop-shadow-lg"
 					>
 						<!-- Dropdown -->
-						<div class="relative">
+						<div>
 							<Listbox v-model="selectedMonth">
 								<ListboxButton
 									class="p-2 px-2 pl-2 md:px-2 xl:pl-5 xl:px-4 bg-white flex hover:text-header-text"
@@ -756,7 +756,7 @@
 							</Listbox>
 						</div>
 
-						<div class="ml-4">
+						<div class="mt-2 md:mt-0 md:ml-4">
 							<Listbox v-model="selectedYear">
 								<ListboxButton
 									class="p-2 px-4 pl-5 md:px-2 md:pl-2 bg-white flex hover:text-header-text"
