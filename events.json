@@ -7,7 +7,8 @@
 					"description": "We are meeting to begin making the club a permanent ARCC club. All members are asked to join.",
 					"timeStart": "4PM",
 					"timeEnd": "6PM",
-					"location": "Coon Rapids Campus",
+					"location": "T127",
+     "extendedLocation": "Coon Rapid Campus",
 					"date": "24",
 					"label": "meeting"
 				}
