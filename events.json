@@ -8,7 +8,7 @@
 					"timeStart": "4PM",
 					"timeEnd": "6PM",
 					"location": "T127",
-     "extendedLocation": "Coon Rapid Campus",
+     "locationExtended": "Coon Rapid Campus",
 					"date": "24",
 					"label": "meeting"
 				}
