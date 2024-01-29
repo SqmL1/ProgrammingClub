@@ -654,8 +654,7 @@
 						</div>
 						<div class="mx-auto w-fit">
 							<!-- Insert times here -->
-							<p class="font-semibold">Time Unknown</p>
-							<p class="font-semibold">Location Unknown</p>
+							<p class="font-semibold font-extra">Weds 4-6pm</p>
 						</div>
 					</div>
 
