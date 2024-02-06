@@ -356,14 +356,12 @@
 						<div
 							class="bg-gray-300 rounded-2xl hidden lg:block w-2/3 max-w-2xl"
 						>
-							<div class="m-auto mt-0 grid grid-cols-2 gap-4 pt-4 px-4">
+							<div class="m-auto mt-0 flex justify-between pt-4 px-4">
 								<div class="text-xl mt-2 font-bold font-heading">
 									<h2>Events for</h2>
 								</div>
 
-								<div
-									class="flex fixed ml-32 md:ml-38 lg:ml-52 z-20 drop-shadow-lg"
-								>
+								<div class="flex z-20 drop-shadow-lg">
 									<!-- Dropdown -->
 									<div class="z-20">
 										<Listbox v-model="eventWeekModal">
@@ -375,7 +373,7 @@
 												</div>
 												<ChevronUpDownIcon class="w-6 ml-2" />
 											</ListboxButton>
-											<ListboxOptions class="mt-2 bg-white z-20">
+											<ListboxOptions class="absolute mt-2 bg-white z-20">
 												<ListboxOption
 													v-for="week in weeks"
 													:key="week"
@@ -533,53 +531,54 @@
 					class="bg-white text-text rounded-2xl justify-center flex flex-col w-full max-w-sm"
 				>
 					<div class="bg-gray-300 rounded-2xl">
-						<DialogTitle class="m-auto grid grid-cols-2 gap-4 mt-4 px-4">
+						<DialogTitle class="m-auto flex justify-between gap-4 mt-4 px-4">
 							<div class="text-xl mt-2 font-bold font-heading">
 								<h2>Events for</h2>
 							</div>
-							<button
-								@click="closeEventWeek"
-								class="mx-auto mt-2 mr-2 flex hover:text-header-text"
-							>
-								<XCircleIcon class="w-5 mr-2 my-auto" />
-							</button>
-							<div
-								class="flex absolute ml-32 md:ml-38 lg:ml-40 z-20 drop-shadow-lg"
-							>
-								<!-- Dropdown -->
-								<div class="z-20">
-									<Listbox v-model="eventWeekModal">
-										<ListboxButton
-											class="p-2 px-2 md:px-4 md:pl-5 bg-white flex hover:text-header-text"
-										>
-											<div class="md:mr-6">
-												{{ eventWeekModal }}
-											</div>
-											<ChevronUpDownIcon class="w-6 ml-2" />
-										</ListboxButton>
-										<ListboxOptions class="mt-2 bg-white z-20">
-											<ListboxOption
-												v-for="week in weeks"
-												:key="week"
-												:value="week"
-												class="flex py-1 px-4 hover:bg-text-secondary"
-												:class="{
-													'text-header-text font-bold': week === eventWeekModal,
-												}"
+							<div class="flex space-x-2">
+								<div class="flex z-20 drop-shadow-lg my-auto">
+									<!-- Dropdown -->
+									<div class="z-20">
+										<Listbox v-model="eventWeekModal">
+											<ListboxButton
+												class="h-fit p-2 px-2 md:px-4 md:pl-5 bg-white flex hover:text-header-text"
 											>
-												<div class="min-w-4 justify-center my-auto">
-													<CheckIcon
-														v-if="week === eventWeekModal"
-														class="w-4"
-													/>
+												<div class="md:mr-6">
+													{{ eventWeekModal }}
 												</div>
-												<div class="ml-4">
-													{{ week }}
-												</div>
-											</ListboxOption>
-										</ListboxOptions>
-									</Listbox>
+												<ChevronUpDownIcon class="w-6 ml-2" />
+											</ListboxButton>
+											<ListboxOptions class="h-fit absolute mt-2 bg-white z-20">
+												<ListboxOption
+													v-for="week in weeks"
+													:key="week"
+													:value="week"
+													class="flex py-1 px-4 hover:bg-text-secondary"
+													:class="{
+														'text-header-text font-bold':
+															week === eventWeekModal,
+													}"
+												>
+													<div class="min-w-4 justify-center my-auto">
+														<CheckIcon
+															v-if="week === eventWeekModal"
+															class="w-4"
+														/>
+													</div>
+													<div class="ml-4">
+														{{ week }}
+													</div>
+												</ListboxOption>
+											</ListboxOptions>
+										</Listbox>
+									</div>
 								</div>
+								<button
+									@click="closeEventWeek"
+									class="mx-auto my-auto mr-2 flex hover:text-header-text"
+								>
+									<XCircleIcon class="w-5 mr-2 my-auto" />
+								</button>
 							</div>
 						</DialogTitle>
 						<div class="mt-8">
@@ -715,9 +714,7 @@
 					>
 						<h2>Events for</h2>
 					</div>
-					<div
-						class="md:flex md:mx-0 absolute mt-5 md:mt-0 mx-5 md:ml-28 z-10 drop-shadow-lg"
-					>
+					<div class="md:flex mt-5 md:mt-0 z-10 drop-shadow-lg">
 						<!-- Dropdown -->
 						<div>
 							<Listbox v-model="selectedMonth">
@@ -732,7 +729,7 @@
 									</div>
 									<ChevronUpDownIcon class="w-6 ml-2" />
 								</ListboxButton>
-								<ListboxOptions class="mt-2 bg-white">
+								<ListboxOptions class="mt-2 bg-white absolute">
 									<ListboxOption
 										v-for="month in months"
 										:key="month"
@@ -763,7 +760,7 @@
 									{{ selectedYear }}
 									<ChevronUpDownIcon class="w-6 ml-2" />
 								</ListboxButton>
-								<ListboxOptions class="mt-2 bg-white">
+								<ListboxOptions class="absolute mt-2 bg-white">
 									<ListboxOption
 										v-for="currentYear in years"
 										:key="currentYear"
