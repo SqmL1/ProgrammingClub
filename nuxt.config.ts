@@ -13,22 +13,21 @@ export default defineNuxtConfig({
 			},
 		],
 	],
-	ssr: false,
-	devtools: {
+ 	ssr: false,
+ 	devtools: {
 		enabled: true,
-
 		timeline: {
 			enabled: true,
 		},
 	},
-	css: ["~/assets/css/main.css"],
-	postcss: {
+ 	css: ["~/assets/css/main.css"],
+ 	postcss: {
 		plugins: {
 			tailwindcss: {},
 			autoprefixer: {},
 		},
 	},
-	app: {
+ 	app: {
 		pageTransition: { name: "page", mode: "out-in" },
 		head: {
 			htmlAttrs: {
@@ -66,4 +65,5 @@ export default defineNuxtConfig({
 			],
 		},
 	},
+	compatibilityDate: "2025-01-13",
 });
