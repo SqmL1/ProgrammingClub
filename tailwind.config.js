@@ -17,7 +17,7 @@ module.exports = {
 				"header-text-secondary": "#FFFFFF",
 				text: "#000000",
 				"text-secondary": "#C9C9C9",
-				"bg-primary": "#FFFFFFFF",
+				"bg-primary": "#e0e3e2",
 				"bg-secondary": "#000000",
 				"bg-tertiary": "#006590",
 				link: "#0194D3",

@@ -1,5 +1,5 @@
 <template>
-  <div class="h-dvh">
+  <div class="h-dvh bg-bg-primary">
     <Navbar />
      <!-- Should be 80px -->
      <NuxtPage />
