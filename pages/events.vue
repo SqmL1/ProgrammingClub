@@ -649,11 +649,14 @@
 							>
 								Meetings
 							</h2>
-							<p class="m-auto max-w-md text-md w-fit">Every other week</p>
+							<p class="m-auto max-w-md text-md w-fit">Every week</p>
+							<p class="m-auto max-w-md text-md w-fit">1st & 3rd full week: Discord</p>
+							<p class="m-auto max-w-md text-md w-fit">2nd & 4th full week: in-person</p>
 						</div>
 						<div class="mx-auto w-fit">
 							<!-- Insert times here -->
-							<p class="font-semibold font-extra">Weds 4-6pm</p>
+							<p class="font-semibold font-extra w-fit">Tuesday at 4pm</p>
+							<p class="w-fit m-auto">Room TBD</p>
 						</div>
 					</div>
 

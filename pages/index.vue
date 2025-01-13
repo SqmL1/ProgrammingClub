@@ -43,12 +43,13 @@
 				>
 			</p>
 			<!--Join Now button-->
-			<div class="flex mt-8 mb-8">
+			<div class="flex flex-wrap mt-8 mb-8 space-x-10">
 				<InternalLink link="/join" text="Join Now!" />
 				<!--Learn more Section-->
 				<!-- Should we put all this on the same page? -->
-				<InternalLink link="/about" text="Learn About Us" class="ml-10" />
+				<InternalLink link="/about" text="Learn About Us" class="sm:ml-0" />
 			</div>
+			<InternalLink link="/events" text="Events & Meetings" />
 		</div>
 
 		<!-- On bigger displays this part splits into the right hand side -->
