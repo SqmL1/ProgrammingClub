@@ -630,6 +630,7 @@
 				</DialogPanel>
 			</div>
 		</Dialog>
+		<!-- Main Content -->
 		<div
 			class="flex flex-col mx-5 m-auto md:mx-auto mt-10 md:mt-20 2xl:mt-40 md:grid md:grid-cols-2 grid-flow-col-dense md:gap-x-12 xl:gap-x-24 2xl:gap-x-52"
 		>
@@ -650,8 +651,8 @@
 								Meetings
 							</h2>
 							<p class="m-auto max-w-md text-md w-fit">Every week</p>
-							<p class="m-auto max-w-md text-md w-fit">1st & 3rd full week: Discord</p>
-							<p class="m-auto max-w-md text-md w-fit">2nd & 4th full week: in-person</p>
+							<p class="m-auto max-w-md text-md w-fit">1st & 3rd full week: In-person</p>
+							<p class="m-auto max-w-md text-md w-fit">2nd & 4th full week: Discord</p>
 						</div>
 						<div class="mx-auto w-fit">
 							<!-- Insert times here -->
